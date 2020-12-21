@@ -1,0 +1,47 @@
+main .main_con .slid .aside-menu li:first-of-type{
+    background: #08c;
+}
+main .main_con .slid .aside-menu li:first-of-type a{
+    color: #fff;
+}
+main .main_con .right ul:first-of-type li{
+    margin: 0;
+    padding: 15px 0;
+    color: #97a5ba;
+    line-height: 26px;
+    border-bottom: 1px dashed #efefef;
+    font-size: 14px;
+    padding-left: 18px;
+    position: relative;
+}
+main .main_con .right ul:first-of-type li a{
+    font-size: 16px;
+    color: #374567;
+    display: block;
+}
+main .main_con .right ul:first-of-type li a:hover{
+    color: #00229e;
+}
+main .main_con .right ul:first-of-type li::before {
+    display: inline-block;
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #97a5ba;
+    border-radius: 6px;
+    opacity: .6;
+    position: absolute;
+    left: 0;
+    top: 25px;
+}
+@media screen and (max-width:767px){
+    main .main_con .right ul:first-of-type li span{
+        display: none;
+    }
+    main .main_con .right ul:first-of-type li a{
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}

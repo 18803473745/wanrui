@@ -1,0 +1,19 @@
+main .main_con .slid .aside-menu ul li:nth-of-type(3){
+    background: #0088cc;
+}
+main .main_con  .slid .aside-menu  ul li:nth-of-type(3) a{
+    color: #fff;
+}
+main .main_con .right .pag li:last-of-type {
+    right: 289px;
+}
+@media screen and (min-width:992px) and (max-width:1239px){
+    main .main_con .right .pag li:last-of-type {
+        right: 204px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    main .main_con .right .pag li:last-of-type {
+        right: 234px;
+    }
+}

@@ -1,0 +1,99 @@
+main .main_con .main-con .content1 p{
+    margin-bottom: 0;
+}
+main .main_con .main-con  h3{
+    font-size: 18px;
+    line-height: 1.46;
+    padding-left: 18px;
+    color: #374567;
+    font-weight: bold;
+    margin: 30px 0 20px;
+    position: relative;
+}
+main .main_con .main-con .content1  h3::before{
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: calc(100% - 8px);
+    border-radius: 3px;
+    background: #0088cc;
+    background-image: linear-gradient(180deg,rgba(255,255,255,.15),transparent);
+    top: 4px;
+    left: 0;
+}
+main .main_con .main-con ul li{
+    font-size: 16px;
+    color: #374567;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    padding: 0;
+    border: none;
+    list-style: disc;
+    margin-left: 2em;
+}
+main .main_con .main-con ul{
+    margin-bottom: 20px;
+}
+main .main_con .main-con p:last-of-type{
+    margin-top: 30px;
+}
+main .main_con .main-con h3:last-of-type{
+    padding-left: 0;
+    margin: 40px 0 20px;
+}
+main .main_con .main-con h3:last-of-type::before{
+    content: '';
+    width: 0;
+    height: 0;
+}
+main .main_con .main-con .content1 ul:last-of-type li{
+    list-style: none ;
+    margin: 12px 0;
+    font-size: 18px;
+    width: 49.9%;
+    position: relative;
+    padding-left: 18px;
+    line-height: 1;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+main .main_con .main-con .content1 ul:last-of-type li a{
+    color: #374567;
+    display: block;
+}
+main .main_con .main-con .content1 ul:last-of-type li a:hover{
+    color: #0088cc;
+}
+main .main_con .main-con .content1 ul:last-of-type li::before{
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #ccc;
+    border-radius: 50%;
+    left: 0;
+    top: 6px;
+}
+main .main_con .main-con .content2{
+    margin-top: -60px;
+    z-index: -1;
+}
+main .main_con .main-con .content2 h3:last-of-type{
+    margin: 0;
+    text-align: left;
+    width: 49.9%;
+}
+@media screen and (max-width:767px){
+    main .main_con .main-con .content1 ul:last-of-type li{
+        width: 100%;
+    }
+    main .main_con .main-con .content2 h3{
+        float: none;
+    }
+    .main-con h1{
+        font-size: 20px;
+    }
+    main .main-head{
+        display: none;
+    }
+}

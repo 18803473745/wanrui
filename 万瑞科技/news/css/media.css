@@ -1,0 +1,17 @@
+main .main_con .slid .aside-menu ul li:nth-of-type(2){
+    background: #08c;
+}
+main .main_con .slid .aside-menu ul li:nth-of-type(2) a{
+   color: #fff;
+}
+main .main_con .right ul li:nth-of-type(2) .item-con{
+    width: 100%;
+}
+@media screen and (max-width:767px){
+    main .main_con .right ul li:nth-of-type(2) .item-con .text{
+        display: block;
+    }
+    footer{
+        position: fixed;
+    }
+}

@@ -1,0 +1,917 @@
+<link rel="shortcut icon" href="../img/LOGOn-132x60.png">
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+    <meta content='telephone=no,email=no' name='format-detection'  />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="UTF-8">
+    <!--[if lt IE 9]>
+<script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
+<script src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js'></script>
+<script src='http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js'></script>
+<![endif]-->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <title>招聘信息 | 万瑞（北京）科技有限公司</title>
+    <script src="../js/jquery.js"></script>
+    <link rel="stylesheet" href="../css/lanren.css">
+    <link rel="stylesheet" href="../font_6660kdsh3sx/iconfont.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <script src="../font_6660kdsh3sx/iconfont.js"></script>
+    <link rel="stylesheet" href="../introduction/css/introduction.css">
+    <link rel="stylesheet" href="../news/css/news.css">
+    <link rel="stylesheet" href="css/join.css">
+</head>
+
+<body>
+    <!-- 头部开始 -->
+    <header id="head">
+        <div class="header" id="header">
+            <header class="clear">
+                <div class="logo fl">
+                    <h1>
+                        <a href="../index.html"><img src="../img/wellray_logo_name.png" alt=""></a>
+                    </h1>
+                </div>
+                <nav class="fl clear">
+                    <ul class="clear fl">
+                        <li class="fl"><a href="../index.html">首页</a></li>
+                        <li class="fl">
+                            <a href="../introduction/introduction.html">公司介绍</a>
+                            <ul class="sub_nav">
+                                <li><a href="../introduction/about.html">关于我们</a></li>
+                                <li><a href="../introduction/certificate.html">资质证书</a></li>
+                            </ul>
+                        </li>
+                        <li class="fl">
+                            <a href="../news/news.html">新闻动态</a>
+                            <ul class="sub_nav">
+                                <li><a href="../news/company.html">公司新闻</a></li>
+                                <li><a href="../news/industry.html">行业动态</a></li>
+                                <li><a href="../news/media.html">媒体报道</a></li>
+                            </ul>
+                        </li>
+                        <li class="fl">
+                            <a href="../product/product.html">产品与服务</a>
+                            <ul class="sub_nav">
+                                <li>
+                                    <a href="../product/cable.html">电缆测井</a>
+                                    <ul class="li_nav">
+                                        <li><a href="../product/cable/cable-pro.html">增强型网络化综合采集系统（GeoExpress Pro）</a></li>
+                                        <li><a href="../product/cable/cable-2.html">高分辨率快速测井平台</a></li>
+                                        <li><a href="../product/cable/cable-3.html">高温小井眼系列</a></li>
+                                        <li><a href="../product/cable/cable-4.html">过钻头快速测井系统(TBEL)</a></li>
+                                        <li><a href="../product/cable/cable-5.html">小直径过套管电阻率（TCRT）</a></li>
+                                        <li><a href="../product/cable/cable-6.html">电缆地层测试器系列</a></li>
+                                        <li><a href="../product/cable/cable-7.html">八扇区固井质量成像仪（HRSS）</a></li>
+                                        <li><a href="../product/cable/cable-8.html">生产测井</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../product/lwd.html">LWD/MWD</a></li>
+                                <li><a href="../product/data.html">测井资料评价</a></li>
+                                <li><a href="../product/driiling.html">连续油管钻井</a></li>
+                                <li>
+                                    <a href="../product/tool.html">井下特殊工具</a>
+                                    <ul class="li_nav">
+                                        <li><a href="../product/tool/tool-1.html">模块式液压爬行器（MFPT）</a></li>
+                                        <li><a href="../product/tool/tool-2.html">电动液压桥塞坐封工具（HBST）</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../product/fluild.html">泥浆工程服务</a></li>
+                                <li><a href="../product/pipeline.html">管道检测服务</a></li>
+                                <li><a href="../product/earth.html">地球物理勘探</a></li>
+                            </ul>
+                        </li>
+                        <li class="fl"><a href="join.html">招聘信息</a></li>
+                        <li class="fl"><a href="../contact/contact.html">联系我们</a></li>
+                    </ul>
+                    <div class="fl">
+                        <form action="" class="clear" id="form">
+                            <input type="text" name="" placeholder="输入关键词搜索" class="fl" id="txt">
+                            <input type="submit" value="" class="fl" id="sou">
+                        </form>
+                    </div>
+                    <script>
+                        var txt = document.getElementById("txt");
+                        var sou = document.getElementById("sou");
+                        sou.onclick = function () {
+                            txt.style.display = "block";
+                        }
+                    </script>
+                    <script>
+                        function hide() {
+                            $(".sub_nav").css("display", "none");   /*隐藏函数，就是将二级菜单隐藏*/
+                        }
+                        /*以下是第二部分*/
+                        $("nav ul li").mouseenter(
+                            function () {
+                                $(this).find(".sub_nav").slideDown();
+                            }
+                        );
+                        $("nav ul li").mouseleave(
+                            function () {
+                                // $(".sub_nav").slideUp();   /*鼠标离开后又隐藏*/
+                                $(this).find(".sub_nav").slideUp();
+                            }
+                        );
+                    </script>
+                    <script>
+                        function hide() {
+                            $(".li_nav").css("display", "none");   /*隐藏函数，就是将二级菜单隐藏*/
+                        }
+                        /*以下是第二部分*/
+                        $(".sub_nav li").mouseenter(
+                            function () {
+                                $(this).find(".li_nav").slideDown();
+                            }
+                        );
+                        $(".sub_nav li").mouseleave(
+                            function () {
+                                // $(".sub_nav").slideUp();   /*鼠标离开后又隐藏*/
+                                $(this).find(".li_nav").slideUp();
+                            }
+                        );
+                    </script>
+                </nav>
+                <div class="btn">
+                    <span class="btn-slide-bar"></span>
+                </div>
+            </header>
+        </div>
+    </header>
+
+    <!-- 代码部分begin -->
+
+    <section class="slide-bar">
+        <nav class="nav">
+            <ul class="nav1">
+                <li><a href="../index.html">首页</a></li>
+                <li>
+                    <a href="../introduction/introduction.html">公司介绍</a>
+                    <div class="icon"><span>></span></div>
+                    <ul class="sub_nav1">
+                        <li><a href="../introduction/about.html">关于我们</a></li>
+                        <li><a href="../introduction/certificate.html">资质证书</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="news.html">新闻动态</a>
+                    <div class="icon"><span>></span></div>
+                    <ul class="sub_nav1">
+                        <li><a href="company.html">公司新闻</a></li>
+                        <li><a href="industry.html">行业动态</a></li>
+                        <li><a href="media.html">媒体报道</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../product/product.html">产品与服务</a>
+                    <div class="icon"><span>></span></div>
+                    <ul class="sub_nav1">
+                        <li>
+                            <a href="../product/cable.html">电缆测井</a>
+                            <div class="icon"><span>></span></div>
+                            <ul class="li_nav1">
+                                <li><a href="../product/cable/cable-pro.html">增强型网络化综合采集系统（GeoExpress Pro）</a></li>
+                                <li><a href="../product/cable/cable-2.html">高分辨率快速测井平台</a></li>
+                                <li><a href="../product/cable/cable-3.html">高温小井眼系列</a></li>
+                                <li><a href="../product/cable/cable-4.html">过钻头快速测井系统(TBEL)</a></li>
+                                <li><a href="../product/cable/cable-5.html">小直径过套管电阻率（TCRT）</a></li>
+                                <li><a href="../product/cable/cable-6.html">电缆地层测试器系列</a></li>
+                                <li><a href="../product/cable/cable-7.html">八扇区固井质量成像仪（HRSS）</a></li>
+                                <li><a href="../product/cable/cable-8.html">生产测井</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../product/lwd.html">LWD/MWD</a></li>
+                        <li><a href="../product/data.html">测井资料评价</a></li>
+                        <li><a href="../product/driiling.html">连续油管钻井</a></li>
+                        <li>
+                            <a href="../product/tool.html">井下特殊工具</a>
+                            <div class="icon"><span>></span></div>
+                            <ul class="li_nav1">
+                                <li><a href="../product/tool/tool-1.html">模块式液压爬行器（MFPT）</a></li>
+                                <li><a href="../product/tool/tool-2.html">电动液压桥塞坐封工具（HBST）</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../product/fluild.html">泥浆工程服务</a></li>
+                        <li><a href="../product/pipeline.html">管道检测服务</a></li>
+                        <li><a href="../product/earth.html">地球物理勘探</a></li>
+                    </ul>
+                </li>
+                <li><a href="join.html">招聘信息</a></li>
+                <li><a href="../contact/contact.html">联系我们</a></li>
+            </ul>
+            <div class="search">
+                <form action="" class="clear">
+                    <input type="text" placeholder="输入关键词搜索..." class="fl">
+                    <input type="submit" value="" class="fl">
+                </form>
+            </div>
+        </nav>
+        <div class="btn1">
+            <img src="../img/close.png" alt="">
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            (function () {
+                var _btn = document.querySelector(".btn-slide-bar"),
+                    _body = document.querySelector("body");
+                _btn.onclick = function () {
+                    $("body").css({
+                        transform: "translate3d(80%,0,0)",position:"fixed",left:0,top:0,bottom:0,right:0,
+                    });
+                }
+            })(window)
+        }, false);
+        $(".btn1").click(function () {
+            $("body").css({
+                transform:"translate3d(0,0,0)",position:"static",
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".nav1>li .icon").toggle(function () {
+                //    $("nav").css("display","block")
+                //    $("nav").show();
+                //find
+                $(this).next(".sub_nav1").slideDown();
+                $(this).css("transform", "rotate(180deg)");
+            }, function () {
+                //    $("nav").hide();
+                $(this).next(".sub_nav1").slideUp();
+                $(this).css("transform", "rotate(0deg)");
+            })
+        })
+        $(function () {
+            $(".sub_nav1>li .icon").toggle(function () {
+                //    $("nav").css("display","block")
+                //    $("nav").show();
+                $(this).next(".li_nav1").slideDown();
+                $(this).css("transform", "rotate(180deg)");
+            }, function () {
+                //    $("nav").hide();
+                $(this).next(".li_nav1").slideUp();
+                $(this).css("transform", "rotate(0deg)");
+            })
+        })
+    </script>
+    <!-- 代码部分end -->
+    <!-- 头部结束 -->
+    <!-- 移动端底部开始 -->
+
+    <div class="footer-bar none">
+        <ul>
+            <li><a href="#"><i class="iconfont icon-shouji"></i><span>电话</span></a></li>
+            <li><a href="#"><i class="iconfont icon-youxiang"></i><span>邮箱</span></a></li>
+            <li><a href="#"><i class="iconfont icon-qq"></i><span>QQ</span></a></li>
+            <li><a href="#"><i class="iconfont icon-map"></i><span>地图</span></a></li>
+        </ul>
+    </div>
+
+    <!-- 移动端底部结束 -->
+
+    <!-- 侧边分享开始 -->
+    <div class="aside">
+        <div class="item1">
+            <i class="fx">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-fenxiang"></use>
+                </svg>
+            </i>
+            <div class="icon-left">
+                <h4>分享到：</h4>
+                <div class="link clear">
+                    <a href="#" class="fl">
+                        <i>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-xinlangweibo"></use>
+                            </svg>
+                        </i>
+                        新浪微博
+                    </a>
+                    <a href="#" class="fl">
+                        <i>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-weixin"></use>
+                            </svg>
+                        </i>
+                        微信
+                        <div class="img">
+                            <div class="imgt">
+                                <img src="../img/weixin.jpg" alt="">
+                            </div>
+                            <span>微信扫码分享</span>
+                        </div>
+                    </a>
+                    <a href="#" class="fl">
+                        <i>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-QQ"></use>
+                            </svg>
+                        </i>
+                        QQ好友
+                    </a>
+                    <a href="#" class="fl">
+                        <i>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-qqkongjian"></use>
+                            </svg>
+                        </i>
+                        QQ空间
+                    </a>
+                    <a href="#" class="fl">
+                        <i>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-douban"></use>
+                            </svg>
+                        </i>
+                        豆瓣
+                    </a>
+                    <a href="#" class="fl">
+                        <i>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-in"></use>
+                            </svg>
+                        </i>
+                        LinkedIn
+                    </a>
+                    <a href="#" class="fl">
+                        <i>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-Facebook"></use>
+                            </svg>
+                        </i>
+                        Facebook
+                    </a>
+                    <a href="#" class="fl">
+                        <i>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-twitter"></use>
+                            </svg>
+                        </i>
+                        Twitter
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="item2">
+            <i class="iconfont icon-duanjiantou-copy">
+            </i>
+        </div>
+    </div>
+    <!-- 侧边分享结束 -->
+
+    <script>
+        var W = $(window).width();
+        if (W >= 1024) {
+            $(document).ready(function () {
+                $(window).on('scroll', function () {
+
+                    var t = $(window).scrollTop();
+                    if (t != 0) {
+                        $("#head").css("height", "60px");
+                        $("#header").css("height", "60px");
+                        $("#header .logo").css("height", "60px");
+                        $("#header nav>ul>li").css("line-height", "57px");
+                        $("#header nav form").css("margin-top", "18px");
+                    } else {
+                        $("#head").css("height", "80px");
+                        $("#header").css("height", "80px");
+                        $("#header .logo").css("height", "80px");
+                        $("#header nav>ul>li").css("line-height", "77px");
+                        $("#header nav form").css("margin-top", "26px");
+                    }
+                })
+            });
+        } else {
+            $(document).ready(function () {
+                $(window).on('scroll', function () {
+                    $("#head").css("height", "60px");
+                    $("#header").css("height", "60px");
+                    $("#header .logo").css("height", "60px");
+                    $("#header nav>ul>li").css("line-height", "57px");
+                    $("#header nav form").css("margin-top", "18px");
+                })
+            });
+        }
+
+        $(document).ready(function () {
+            $(window).on('scroll', function () {
+                var t = $(window).scrollTop();
+                if (t < 50) {
+                    $(".item2").css("opacity", "0");
+                } else if (t > 50) {
+                    $(".item2").css("opacity", "1");
+                }
+            })
+        });
+        $(".item2").click(function () {
+            $('html,body').animate({ 'scrollTop': '0' }, 500,)
+        })
+
+    </script>
+
+    <!-- banner开始 -->
+    <div class="ban" >
+        <img src="../img/banner.jpg" alt="">
+    </div>
+    <!-- banner结束 -->
+
+    <!-- 主体内容开始 -->
+    <main class="clear">
+        <p class="main-head">
+            <a href="../index.html">首页</a>&nbsp;/&nbsp;<a href="join.html">招聘信息</a>
+        </p>
+        <div class="main_con clear">
+            <aside class="slid fl">
+                <div class="aside-menu">
+                    <ul>
+                        <li><a href="../news/company.html">公司新闻</a></li>
+                        <li><a href="../news/media.html">媒体报道</a></li>
+                        <li><a href="../news/industry.html">行业动态</a></li>
+                    </ul>
+                </div>
+                <div class="aside-con">
+                    <h3>最新产品</h3>
+                    <ul class="clear">
+                        <li class="fl">
+                            <h4><a href="../aside/aside-1.html">National first cable type hydraulic bridge plug technology into the social market</a></h4>
+                        </li>
+                        <li class="fl">
+                            <a href="../aside/aside-2.html"><img src="../news/img/img1.jpg" alt=""></a>
+                            <h4><a href="../aside/aside-2.html">Module Flexible Powerful Tractor（MFPT）</a></h4>
+                        </li>
+                        <li class="fl">
+                            <a href="../aside/aside-3.html"><img src="../news/img/img2.jpg" alt=""></a>
+                            <h4><a href="../aside/aside-3.html">万瑞科技将参展北京石油展，服务8个国家，20多个油气田，产品质量精益求精！</a></h4>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="right fr">
+                <div id="news">
+                    <h1>招聘信息</h1>
+                    <ul class="clear" id="tab_tit">
+                        <li class="active fl">软件工程师</li>
+                        <li class="fl">电子工程师</li>
+                        <li class="fl">PCB设计</li>
+                        <li class="fl">单片机工程师</li>
+                        <li class="fl">ARM工程师</li>
+                        <li class="fl">FPGA工程师</li>
+                        <li class="fl">机械设计师</li>
+                        <li class="fl">质检员</li>
+                        <li class="fl">国内市场总监</li>
+                        <li class="fl">国际市场总监</li>
+                        <li class="fl">市场营销</li>
+                        <li class="fl">生产总监</li>
+                        <li class="fl">财务总监</li>
+                        <li class="fl">财务经理</li>
+                        <li class="fl">财务会计</li>
+                        <li class="fl">行政文员</li>
+                        <li class="fl">网络维护</li>
+                    </ul>
+                    <div class="tab_con">
+                        <div class="con">
+                            <h3>职位描述：</h3>
+                            <p>根据项目的任务分配进行详细设计；</p>
+                            <p>完成相应的软件模块代码编写并进行测试和系统调试；</p>
+                            <p>完成相应的开发文档。</p>
+                            <h3>任职资格：</h3>
+                            <p>1、计算机相关专业本科毕业，学士学位，英语四级水平；</p>
+                            <p>2、熟练掌握C/C++语言编程；</p>
+                            <p>3、熟练使用Qt编程环境及PostgreSQL数据库编程；</p>
+                            <p>4、掌握python语言；</p>
+                            <p>5、对数据结构和操作系统要求熟练掌握；</p>
+                            <p>6、有较强的逻辑思维能力和学习能力；</p>
+                            <p>7、工作认真负责，细致周到，有良好的工作作风及协作精神；</p>
+                            <p>8、1年以上C/C++编程开发经验或优秀应届毕业生。</p>
+                            <h3>福利待遇：</h3>
+                            <p>1、正常周六日及节假日休息，每年5天带薪年休假；</p>
+                            <p>2、提供午餐；</p>
+                            <p>3、社会保险。</p>
+                        </div>
+                        <div class="con">
+                            <h3>职位描述：</h3>
+                            <p>1、负责产品的技术资料准备，包括电路原理图，BOM，PCB图，关键元器件检验方法，生产工艺指导（测试）等；</p>
+                            <p>2、负责与整机产品工程师沟通、配合分析解决整机产品的各种质量问题；</p>
+                            <p>3、负责产品程序的编写和维护；</p>
+                            <p>4、编写相关设计文档，调测试过程文档，使用说明文档；</p>
+                            <p>5、有较好的团队合作意识，能够积极主动地完成相关工作。</p>
+                            <h3>任职资格：</h3>
+                            <p>1、年龄在45岁以下；</p>
+                            <p>2、自动化、电子、机电等相关专业本科毕业或大专学历有一年以上工作经验；</p>
+                            <p>3、有扎实的模拟电路理论基础和良好的电路设计、调试能力；</p>
+                            <p>4、熟悉常用的电子元器件及调试设备；</p>
+                            <p>5、会PCB图设计优先。</p>
+                            <h3>福利待遇：</h3>
+                            <p>1、正常周六日及节假日休息，每年5天带薪年休假；</p>
+                            <p>2、提供午餐；</p>
+                            <p>3、社会保险。</p>
+                        </div>
+                        <div class="con">
+                            <h3>职位描述：</h3>
+                            <p>1、PCB封装制作</p>
+                            <p>2、导入原理图和结构图生成PCB文件，并按照要求进行布局，布线</p>
+                            <p>3、检查PCB设计规范，并做修改，使之符合电路和生产要求</p>
+                            <p>4、处理PCB加工厂商和SMT厂商工程反馈文件</p>
+                            <p>5、PCB文档资料的整理和记录</p>
+                            <h3>任职资格：</h3>
+                            <p>1、大学本科以上学历，电子，计算机，通信相关专业,PCB设计经验1年以上 或优秀毕业生</p>
+                            <p>2、数字与模拟电子电路基础,</p>
+                            <p>3、熟练运用protel、,Altium Designer、Cadence等EDA工具进行PCB设计</p>
+                            <p>4、了解产品的生产设计流程</p>
+                            <p>5、了解EMI、EMC等相关技术者优先</p>
+                            <p>6、了解产品的生产设计流程</p>
+                            <p>7、工作认真负责，细致周到</p>
+                            <p>8、有时间观念，具有良好的团队精神和学习、计划与执行能力。</p>
+                            <h3>福利待遇：</h3>
+                            <p>1、正常周六日及节假日休息，每年5天带薪年休假；</p>
+                            <p>2、提供午餐；</p>
+                            <p>3、社会保险。</p>
+                        </div>
+                        <div class="con">
+                            <h3>职位描述：</h3>
+                            <p>1、电气、电子工程等相关专业，本科及以上学历；</p>
+                            <p>2、1年以上嵌入式软、硬件开发经验,精通C等语言的应用编程，能够独立进行程序开发；</p>
+                            <p>3、 熟悉一种单片机的软、硬件开发流程，有PIC开发经历优先；</p>
+                            <p>4、熟悉SCI、IIC和CAN通讯，具有相关通讯开发经验；</p>
+                            <p>5、具有较强的团队协作精神和工作责任心，能承受一定的工作压力。</p>
+                            <h3>任职资格：</h3>
+                            <p>1、年龄在45岁以下；</p>
+                            <p>2、本科及以上学历，电子工程、自动化、计算机等相关专业，两年以上工作经验；</p>
+                            <p>3、精通C语言软件开发，熟练掌握keil或MPLAB开发工具；</p>
+                            <p>4、精通常用8位，32位单片机，程序编写规范，注释完整，编程思路清晰；</p>
+                            <p>5、有实际项目开发经验者优先。</p>
+                            <h3>福利待遇：</h3>
+                            <p>1、正常周六日及节假日休息，每年5天带薪年休假；</p>
+                            <p>2、提供午餐；</p>
+                            <p>3、社会保险。</p>
+                        </div>
+                        <div class="con">
+                            <h3>职位描述：</h3>
+                            <p>1、电气、电子工程等相关专业，本科及以上学历；</p>
+                            <p>2、1年以上嵌入式软、硬件开发经验,精通C等语言的应用编程，能够独立进行程序开发；</p>
+                            <p>3、 熟悉一种单片机的软、硬件开发流程，有PIC开发经历优先；</p>
+                            <p>4、熟悉SCI、IIC和CAN通讯，具有相关通讯开发经验；</p>
+                            <p>5、具有较强的团队协作精神和工作责任心，能承受一定的工作压力。</p>
+                            <h3>任职资格：</h3>
+                            <p>1、年龄在45岁以下；</p>
+                            <p>2、本科及以上学历，电子工程、自动化、计算机等相关专业，两年以上工作经验；</p>
+                            <p>3、精通C语言软件开发，熟练掌握keil或MPLAB开发工具；</p>
+                            <p>4、精通常用8位，32位单片机，程序编写规范，注释完整，编程思路清晰；</p>
+                            <p>5、有实际项目开发经验者优先。</p>
+                            <h3>福利待遇：</h3>
+                            <p>1、正常周六日及节假日休息，每年5天带薪年休假；</p>
+                            <p>2、提供午餐；</p>
+                            <p>3、社会保险。</p>
+                        </div>
+                        <div class="con">
+                            <h3>职位描述：</h3>
+                            <p>1、根据项目要求进行FPGA逻辑的设计、开发、调试、维护；</p>
+                            <p>2、熟悉掌握Verilog代码编写、仿真、时序约束/分析；</p>
+                            <p>3、编写相关设计文档，测试过程文档及使用说明文档；</p>
+                            <p>4、参与解决各种逻辑设计技术问题，分析FPGA逻辑设计相关的硬件板卡或系统的故障原因。</p>
+                            <p>5、有较好的团队合作意识，能够积极主动地完成相关工作。</p>
+                            <h3>任职资格：</h3>
+                            <p>1、年龄在45岁以下；</p>
+                            <p>2、电子相关专业本科毕业或大专学历有一年以上工作经验；</p>
+                            <p>3、熟悉QuartusII/Modelsim等EDA软件，熟练掌握Verilog/VHDL语言，有Altera/Actel系列FPGA芯片开发经验。</p>
+                            <h3>福利待遇：</h3>
+                            <p>1、正常周六日及节假日休息，每年5天带薪年休假；</p>
+                            <p>2、提供午餐；</p>
+                            <p>3、社会保险。</p>
+                        </div>
+                        <div class="con">
+                            <h3>职位描述：</h3>
+                            <p>1、机械相关专业，本科应届毕业生；</p>
+                            <p>2、熟悉AutoCad/Solidworks或UG中至少一项；</p>
+                            <p>3、工作认真负责，细致周到；</p>
+                            <p>4、有时间观念，具有良好的团队精神和学习、计划与执行能力。</p>
+                            <p>5、有石油测井仪器结构设计经验者优先考虑；</p>
+                            <h3>任职资格：</h3>
+                            <p>1、年龄在20岁~40岁之间；</p>
+                            <p>2、严格遵守行业及道德规范；</p>
+                            <p>3、具备良好的协调与沟通能力。</p>
+                            <h3>福利待遇：</h3>
+                            <p>1、正常周六日及节假日休息，每年5天带薪年休假；</p>
+                            <p>2、提供午餐；</p>
+                            <p>3、社会保险。</p>
+                        </div>
+                        <div class="con">
+                            <h3>职位描述：</h3>
+                            <p>1、有机械零件、外购件和标准件的质检工作经验；</p>
+                            <p>2、入库、返修相关手续办理；</p>
+                            <p>3、熟悉机械量检具；</p>
+                            <p>4、熟悉机械零件图及装配图；</p>
+                            <h3>任职资格：</h3>
+                            <p>1、有机械零件质检经验优先；</p>
+                            <p>2、会使用office办公软件；</p>
+                            <p>3、有机械加工经验者优先。</p>
+                            <h3>福利待遇：</h3>
+                            <p>1、正常周六日及节假日休息，每年5天带薪年休假；</p>
+                            <p>2、提供午餐；</p>
+                            <p>3、社会保险。</p>
+                        </div>
+                        <div class="con">
+                            <h3>职位描述：</h3>
+                            <p>1、制定市场部任务目标及工作计划，合理控制成本并实现目标利润；</p>
+                            <p>2、负责市场开发、客户拓展及深度发掘、商务谈判；</p>
+                            <p>3、对公司目标客户进行开发与深度挖掘；</p>
+                            <p>4、关注行业动态，定期进行市场预测与情报分析，为公司决策提供依据；</p>
+                            <p>5、指导本部门员工提升商务洽谈、市场开拓等能力，建立高效的团队；</p>
+                            <h3>任职资格：</h3>
+                            <p>1、市场营销、企业管理、广告学等相关专业本科以上学历；</p>
+                            <p>2、30~45岁，6年以上市场管理开发相关工作经验，有知名公司工作经验者优先考虑；</p>
+                            <p>3、有品牌、广告、咨询、设计、营销策划公司客户服务工作经验者优先考虑；</p>
+                            <p>4、有丰富的客户管理经验及石油行业市场工作经验者优先考虑；</p>
+                            <p>5、具备较强的项目开拓、市场运作能力、项目谈判能力等；</p>
+                            <p>6、较强的进取心和责任心，坚信团队的价值大于个人。</p>
+                            <h3>福利待遇：</h3>
+                            <p>1、正常周六日及节假日休息，每年5天带薪年休假；</p>
+                            <p>2、提供午餐；</p>
+                            <p>3、社会保险。</p>
+                        </div>
+                        <div class="con">
+                            <h3>职位描述：</h3>
+                            <p>1、入围和直接获得国际大石油公司客户的采购名单或采购合同，实现大客户销售目标；</p>
+                            <p>2、开发国际大客户市场，清晰了解国际大客户市场的发展规划和动态；</p>
+                            <p>3、制定公司国际市场开拓的计划，设计和参加国际市场活动；</p>
+                            <p>4、维护国际大客户的关系，与大客户的内部决策机构人员联系并保持良好的关系；</p>
+                            <p>5、了解进入大客户市场的条件和需求；</p>
+                            <p>6、协助公司组织资源建设建立，满足大客户需求的标准和条件；</p>
+                            <p>7、跟踪和解决大客户的新需求新要求，推动公司内部新技术新产品开发，满足客户需求；</p>
+                            <p>8、国家大客户市场需要负责的其他职责；</p>
+                            <p>9、了解大客户包括国际石油公司（如BP,SHELL和TOTAL）和中石油中石化及其他中国企业在海外发展计划。</p>
+                            <h3>任职资格：</h3>
+                            <p>1、大学本科以上学历，英语六级以上、英语流利；</p>
+                            <p>2、5年以上和石油行业工作经验；</p>
+                            <p>3、良好的职业素养、个人修养和形象；</p>
+                            <p>4、外向和开放的性格；</p>
+                            <p>5、和国家、国际大石油公司有良好的关系和合作经验。</p>
+                            <h3>福利待遇：</h3>
+                            <p>1、正常周六日及节假日休息，每年5天带薪年休假；</p>
+                            <p>2、提供午餐；</p>
+                            <p>3、社会保险。</p>
+                        </div>
+                        <div class="con">
+                            <h3>职位描述：</h3>
+                            <p>1、开拓油田目标市场，完成所辖区域的销售任务；</p>
+                            <p>2、收集、反馈市场趋势、需求变化、竞争对手和客户方面的准确信息；</p>
+                            <p>3、能够挖掘潜在客户；</p>
+                            <p>4、完成公司订立的销售目标，签订销售合同，负责应收货款的回收；</p>
+                            <p>5、建立客户资料卡及客户档案，完成相关销售报表；</p>
+                            <p>6、与客户建立良好关系，维护企业形象；</p>
+                            <p>7、完成领导交办的其他相关事务。</p>
+                            <h3>任职资格：</h3>
+                            <p>1、石油、仪器设备等相关专业大专及以上学历；</p>
+                            <p>2、熟悉国内油田销售市场，年龄在28岁以上，具有良好的社交能力及独立工作能力，至少2年以上油田技术服务营销工作经验；</p>
+                            <p>3、大中型油服公司，从事油田装备、测、钻井领域工作经验；</p>
+                            <p>4、具有良好的沟通能力，思路清晰，能够独立开拓市场；</p>
+                            <p>5、能积极面对挑战及压力，工作积极主动，能适应经常性出差，具有良好的团队协作精神；</p>
+                            <p>6、具备较强的客户沟通能力和较高的商务处理能力。</p>
+                            <p>7、英语或俄语有较好的的听、说、读、写能力。</p>
+                            <h3>福利待遇：</h3>
+                            <p>1、正常周六日及节假日休息，每年5天带薪年休假；</p>
+                            <p>2、提供午餐；</p>
+                            <p>3、社会保险。</p>
+                        </div>
+                        <div class="con">
+                            <h3>职位描述：</h3>
+                            <p>1、全面负责机加工及本公司生产运营管理及外协机加工厂的生产管理；</p>
+                            <p>2、全面负责组织、实施公司生产运营体系、质保体系、成本控制体系、考核体系以及相关制度流程。</p>
+                            <p>3、制定并执行公司生产战略规则，审定年度生产并提出合理化建议；</p>
+                            <p>4、提高生产效率、提高产品质量、改善作业流程、降低生产成本；</p>
+                            <p>5、检查车间各岗位工作，保障生产的正常运行；</p>
+                            <p>6、全面负责本公司安全、健康、环保（HSE）的管理；</p>
+                            <p>7、负责各车间工作人员的管理及培养。</p>
+                            <h3>任职资格：</h3>
+                            <p>1、年龄30~45岁，大专以上学历，精通机械加工方面实操经验和机械制造专业者优先；</p>
+                            <p>2、有三年以上机械加工生产管理经验，熟悉公司生产运作管理，拥有丰富的生产管理、成本控制、质量管理、物流管理等方面的经验；</p>
+                            <p>3、精通产品工艺、生产流程、过程控制及质量检查，熟悉生产制造各个环节的统筹管理流程；</p>
+                            <p>4、具有很强的管理、组织、协调及沟通能力。有团体合作精神，协作完成好组装调试；</p>
+                            <p>5、能服从外派。</p>
+                            <h3>福利待遇：</h3>
+                            <p>1、正常周六日及节假日休息，每年5天带薪年休假；</p>
+                            <p>2、提供午餐；</p>
+                            <p>3、社会保险。</p>
+                        </div>
+                        <div class="con">
+                            <h3>职位描述：</h3>
+                            <p>1、协助决策层制定公司发展战略，负责其功能领域内短期及长期的公司决策和战略，对公司中长期目标的达成产生重要影响；</p>
+                            <p>2、负责公司财政方面的业务和策略，包括会计管理、财务计划、财务程序、内部审计、财务、成本控制；</p>
+                            <p>3、负责公司财务管理及内部控制，根据公司业务发展的计划完成年度财务预算，并跟踪其执行情况；</p>
+                            <p>4、制定、管理和实施公司的经济、财务标准和程序，以满足控制风险的要求；</p>
+                            <p>5、分析并改进现有流程，不断提高资金的利用率和工作效率；</p>
+                            <p>6、负责财政、税务、银行等对外关系的协调和公司内部职能部门关系的协调；</p>
+                            <p>7、指导、规范、监督财务制度的执行，管控财务风险，对经营活动和资金计划进行风险评估；</p>
+                            <p>
+                                8、全面负责账务处理及税务工作，结合最新财税政策，每年进行整体税务筹划，纳税规划，追求节税同时有税法支持，合理、降低公司税负，避免涉税风险；
+                            </p>
+                            <p>9、建立健全财务管理体系，保障财务会计信息质量，降低经营管理成本；</p>
+                            <p>10、组织财务分析，为公司领导提供决策支持。</p>
+                            <p><br></p>
+                            <h3>任职资格：</h3>
+                            <p>1、财务、会计、金融、投资等专业本科及以上学历，拥有中级以上会计师职称，具有注册会计师资格证书者优先考虑；</p>
+                            <p>2、熟知国家财经法律法规政策，熟练操作财务软件；</p>
+                            <p>3、具备良好的财务管理意识，熟知先进的财务管理方式。5年以上同行业或从事600家以上连锁行业相关工作经验；</p>
+                            <p>4、有较强的财务分析预测、投融资及风险防范能力；</p>
+                            <p>5、对企业资本运营有很深刻的理解，具备出色的管理能力与良好的沟通技巧；</p>
+                            <p>6、具备出色的财务管理经验及敏锐的洞察力和数据感觉，熟悉财务计划、成本分析、预算、成本核算等高级财务管理流程；</p>
+                            <p>7、有现代企业财务成本控制及提高资金周转率的实践工作经验和技巧；</p>
+                            <p>8、具有良好的团队合作精神，有很强的管理经验；</p>
+                            <p>9、善于使用人才和培养人才；</p>
+                            <p>10、具有良好的职业道德、严谨的工作作风以及高度的事业心和责任感；严守公司机密；</p>
+                            <p>11、身体健康。</p>
+                            <h3>福利待遇：</h3>
+                            <p>1、正常周六日及节假日休息，每年5天带薪年休假；</p>
+                            <p>2、提供午餐；</p>
+                            <p>3、社会保险。</p>
+                        </div>
+                        <div class="con">
+                            <h3>职位描述：</h3>
+                            <p>1、协助总经理制定公司财务发展战略；</p>
+                            <p>2、负责公司资金运作管理、日常财务管理与分析、资金运作、筹资方略、对外合作谈判等；</p>
+                            <p>3、根据国家财务会计法规和行业会计规定，结合公司特点，负责拟订公司会计核算的有关工作细则和具体规定，报经领导批准后组织实施；</p>
+                            <p>4、负责项目成本核算与控制的管理；</p>
+                            <p>5、负责公司财务管理及内容控制，根据公司业务发展的计划完成年度财务预算，并跟踪其执行情况；</p>
+                            <p>6、按时向总经理提供财务报告和财务分析，并确保这些报告可靠、准确；</p>
+                            <p>7、制定、维护、改进公司财务管理程序和政策，以满足控制风险的要求，如：改进应收账款、应付账款、成本费用的业务程序等；</p>
+                            <p>8、组织制定财务方面的管理制度及有关规定，并监督执行，制定年度、季度财务计划；</p>
+                            <p>9、监控可能会对公司造成经济损失的重大经济活动，并及时向总经理报告；</p>
+                            <p>10、监控公司投资项目，以确保未经批准的项目不实施，批准的项目在预算范围内进行并在控制之中；</p>
+                            <p>
+                                11、全面负责财务运营中心的日常管理工作，对下属人员有业务指导权和考核权、对各部门财务计划的执行情况有检查和考核权、对违反财经纪律、不符合财务制度的经费开支有权拒付；
+                            </p>
+                            <p>12、负责编制及组织实施财务预算报告、月/季/年度财务报告；</p>
+                            <p>13、负责公司资金、资产的管理工作；</p>
+                            <p>14、负责协调银行、税务、工商及其他机构的关系；</p>
+                            <p>15、负责公司投资项目融、投、管、退各个环节财务方案制定及后期财务管理；</p>
+                            <p>16、完成领导交办的其他工作。</p>
+                            <h3>任职资格：</h3>
+                            <p>1、会计、财务或相关专业本科以上学历，具有注册会计师或高级会计师资格；有5年以上金融企业财务管理经验；</p>
+                            <p>2、精通中西方财务核算系统，以及公司财务会计、审计、税务、外汇等业务；</p>
+                            <p>3、精通英语，熟悉外资业务的相关操作；</p>
+                            <p>4、熟悉会计操作、会计核算及审计的全套流程与管理；</p>
+                            <p>5、熟悉国家财经法律法规和税收政策及相关账务的处理方法；</p>
+                            <p>6、熟悉财务管理、企业融资及资本运作；</p>
+                            <p>7、良好的口头及书面表达能力；</p>
+                            <p>8、有良好的政府、银行关系，有一定的融资能力；</p>
+                            <p>9、独立工作能力强，应变能力突出，具备团队精神；</p>
+                            <p>10、原则性强，思维敏捷、严谨，工作踏实、认真，有较强的敬业精神。</p>
+                            <h3>福利待遇：</h3>
+                            <p>1、正常周六日及节假日休息，每年5天带薪年休假；</p>
+                            <p>2、提供午餐；</p>
+                            <p>3、社会保险。</p>
+                        </div>
+                        <div class="con">
+                            <h3>职位描述：</h3>
+                            <p>1、全面负责财务部的日常管理工作；</p>
+                            <p>2、负责公司财务核算及记账工作；审核凭证，复核收付单据及相关业务，审核原始单据的合法有效性；</p>
+                            <p>3、组织制定、完善财务管理制度及有关制定，并监督执行；</p>
+                            <p>4、负责编制及组织实施财务预算报告，月、季、年度财务报告；</p>
+                            <p>5、负责公司全面的资金调配，成本核算、会计核算、报税和分析工作；</p>
+                            <p>6、负责协助总经理对经营计划、预算编制及财务报表的管理；</p>
+                            <p>7、负责对财务工作有关的外部及政府部门，如税务局、财政局、银行、会计事务所等联络、沟通工作；</p>
+                            <p>8、完成上级交给的其他日常事务工作。</p>
+                            <h3>任职资格：</h3>
+                            <p>1、财会专业，本科以上学历，2~3年以上财务主管工作经历，软件开发、互联网从业经验优先；</p>
+                            <p>2、具有中级会计师及以上职称；</p>
+                            <p>3、熟悉国家财经政策和会计、税务法规；</p>
+                            <p>4、有会计师事务所、新三板企业、上市企业工作经验优先；</p>
+                            <p>5、擅于沟通表达，有较好的的组织协调能力和团队合作精神。</p>
+                            <h3>福利待遇：</h3>
+                            <p>1、正常周六日及节假日休息，每年5天带薪年休假；</p>
+                            <p>2、提供午餐；</p>
+                            <p>3、社会保险。</p>
+                        </div>
+                        <div class="con">
+                            <h3>职位描述：</h3>
+                            <p>1、负责综合部日常事务；</p>
+                            <p>2、负责行政合同管理；</p>
+                            <p>3、负责外来人员协调（联系、接待等）；</p>
+                            <p>4、负责公司资质审核及办理；</p>
+                            <p>5、负责办公设备、物资等采购、统计及管理；</p>
+                            <p>6、负责公司网站、服务器、邮件系统等的管理与维护；</p>
+                            <p>7、负责公司考勤管理；</p>
+                            <p>8、负责公司大楼卫生及安全巡查；</p>
+                            <p>9、负责公司食堂管理；</p>
+                            <p>10、完成领导临时安排的工作。</p>
+                            <h3>任职资格：</h3>
+                            <p>1、大专以上学历，行政或文秘相关专业，男女不限</p>
+                            <p>2、3年以上驾龄优先（C照）；</p>
+                            <p>3、有良好的后勤保障和服务意识，吃苦耐劳，责任心强；</p>
+                            <p>4、有相关从业经验，良好的沟通、组织和协调能力；</p>
+                            <p>5、有文档编辑处理经验、美工经验优先；</p>
+                            <p>6、有办公用品采购，合同起草签定经验优先。</p>
+                            <p>7、有产品生命周期管理软件（PLM）、中软加密系统和Citrix经验者优先。</p>
+                            <h3>福利待遇：</h3>
+                            <p>1、正常周六日及节假日休息，每年5天带薪年休假；</p>
+                            <p>2、提供午餐；</p>
+                            <p>3、社会保险。</p>
+                        </div>
+                        <div class="con">
+                            <h3>职位描述：</h3>
+                            <p>
+                                1、日常管理：电脑设备、网络设备、服务器，打印机，传真机，投影仪，路由器等硬件设备的安装、调试、维护、检查、维修。相关备品备件，技术资料的管理；公司所有人员计算机系统的安装和恢复，各个不同岗位常用软件的备份和恢复；
+                            </p>
+                            <p>2、优化网络系统，规划调整设备配置，完成路由器/交换机/防火墙的配置施工，参与服务器与应用系统的管理，确保系统的稳定可靠运行；</p>
+                            <p>3、监视网络运行，调整网络参数，调度网络资源，保持网络稳定、畅通。</p>
+                            <p>4、熟悉多种操作系统的安装和维护，并有网络安全、电脑病毒等维护经验；</p>
+                            <p>5、负责公司网站、服务器、邮件系统等的管理与维护；</p>
+                            <p>6、熟悉网络布线、电话交换机等。</p>
+                            <p>7、有产品生命周期管理软件（PLM）、中软加密系统Citrix经验者优先。</p>
+                            <h3>任职资格：</h3>
+                            <p>1、国家承认正规院校本科及以上学历，计算机相关专业；</p>
+                            <p>2、二年或二年以上的企业网络管理、服务器网管工作经验；</p>
+                            <p>3、细心周到，思维敏捷，具有一定的专业技术水平。</p>
+                            <p>4、对工作认真负责，沟通协调能力强、有责任心、爱岗敬业。</p>
+                            <h3>福利待遇：</h3>
+                            <p>1、正常周六日及节假日休息，每年5天带薪年休假；</p>
+                            <p>2、提供午餐；</p>
+                            <p>3、社会保险。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript">
+		$(function(){
+			//将tab_con下面的不是第一个.con 的全部隐藏=====保留第一个.con
+			$(".tab_con .con:not(':first')").hide();
+
+			//click点击 mouseover鼠标经过
+			$("#tab_tit li").click(function(){
+				//给当前被点击的li添加active类名，其余的兄弟元素移除active类名
+				$(this).addClass("active").siblings().removeClass("active");
+
+				//让所有的.con隐藏，让相应下标的con显示
+				$(".tab_con .con").hide().eq($(this).index()).fadeTo("fast",1);
+//				$("#con"+$("#tab").children("li").index($(this))).show();
+			})
+		})
+	</script>
+    <!-- 主体内容结束 -->
+
+
+    <!-- 底部开始 -->
+    <footer>
+        <div class="footer_con">
+            <div class="ft">
+                <dl>
+                    <dt>技术支持</dt>
+                    <dd><a href="#">Home</a></dd>
+                    <dd><a href="#">FAQs</a></dd>
+                    <dd><a href="#">Join us</a></dd>
+                    <dd><a href="#">Contact Us</a></dd>
+                </dl>
+                <dl>
+                    <dt>联系我们</dt>
+                    <dd><a href="#">Home</a></dd>
+                    <dd><a href="#">招聘信息</a></dd>
+                    <dd><a href="#">FAQs</a></dd>
+                    <dd><a href="#">Join us</a></dd>
+                    <dd><a href="#">Contact Us</a></dd>
+                </dl>
+                <dl>
+                    <dt>友情链接</dt>
+                    <dd><a href="#">Home</a></dd>
+                    <dd><a href="#">长江大学</a></dd>
+                    <dd><a href="#">石油大学（北京）</a></dd>
+                    <dd><a href="#">石油大学（华东）</a></dd>
+                    <dd><a href="#">FAQs</a></dd>
+                    <dd><a href="#">Join us</a></dd>
+                    <dd><a href="#">Contact Us</a></dd>
+                </dl>
+                <div class="img">
+                    <h4>微信公众号</h4>
+                    <img src="../img/weixin.jpg" alt="">
+                </div>
+                <div class="tel">
+                    <h3>服务热线</h3>
+                    <p>010-58563500</p>
+                    <p>客服服务时段： 周一至周五，9:00 - 17:30，节假日休息</p>
+                    <p>
+                        <a href="#"><i class="iconfont icon-weibo"></i></a>
+                        <a href="#"><i class="iconfont icon-facebook"></i></a>
+                        <a href="#"><i class="iconfont icon-twitter"></i></a>
+                        <a href="#"><i class="iconfont icon-23"></i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2018 万瑞（北京）科技有限公司 版权所有 <a href="#">京ICP备18010914号</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- 底部结束 -->
+
+
+</body>
+
+</html>

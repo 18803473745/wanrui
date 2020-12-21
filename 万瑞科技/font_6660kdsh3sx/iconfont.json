@@ -1,0 +1,79 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2281367",
+      "name": "新浪微博",
+      "font_class": "xinlangweibo",
+      "unicode": "e504",
+      "unicode_decimal": 58628
+    },
+    {
+      "icon_id": "3325920",
+      "name": "in",
+      "font_class": "in",
+      "unicode": "e502",
+      "unicode_decimal": 58626
+    },
+    {
+      "icon_id": "4058716",
+      "name": "twitter",
+      "font_class": "twitter",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "4571993",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "8688670",
+      "name": "豆瓣",
+      "font_class": "douban",
+      "unicode": "e703",
+      "unicode_decimal": 59139
+    },
+    {
+      "icon_id": "11817281",
+      "name": "分 享",
+      "font_class": "fenxiang",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "12385753",
+      "name": "Facebook",
+      "font_class": "Facebook",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "13896714",
+      "name": "短箭头",
+      "font_class": "duanjiantou-copy",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    },
+    {
+      "icon_id": "14467914",
+      "name": "QQ",
+      "font_class": "QQ",
+      "unicode": "e509",
+      "unicode_decimal": 58633
+    },
+    {
+      "icon_id": "16680384",
+      "name": "qqkongjian",
+      "font_class": "qqkongjian",
+      "unicode": "e503",
+      "unicode_decimal": 58627
+    }
+  ]
+}

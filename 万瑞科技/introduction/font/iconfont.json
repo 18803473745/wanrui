@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2171908",
+      "name": "日历",
+      "font_class": "rili",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "4195840",
+      "name": "书签",
+      "font_class": "shuqian",
+      "unicode": "e6ce",
+      "unicode_decimal": 59086
+    },
+    {
+      "icon_id": "18182907",
+      "name": "文件夹",
+      "font_class": "ICONLOGO20201109gengxin_huaban1fuben42",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+@media screen and (max-width:767px){
+    main .main_con .right ul li:nth-of-type(5) .item-con .text,main .main_con .right ul li:nth-of-type(6) .item-con .text,main .main_con .right ul li:nth-of-type(9) .item-con .text{
+        display: block;
+    }
+}
+main .main_con .right .pag li:nth-of-type(2){
+    display: inline-block;
+    background: #f4f4f5;
+    color: #7a8ba6;
+ }
+ main .main_con .right .pag li:hover{
+     background: #00229e;
+     color: #fff;
+ }
+ main .main_con .right .pag li:hover a{
+    color: #fff !important;
+}
+ main .main_con .right .pag li:nth-of-type(4){
+    background: #08c;
+}
+main .main_con .right .pag li:nth-of-type(4) a{
+    background: #08c;
+    color: #fff;
+}
+main .main_con .right .pag li:nth-of-type(3){
+    background: #f4f4f5;
+}
+main .main_con .right .pag li:nth-of-type(3) a{
+    color: #7a8ba6;
+}
+main .main_con .right .pag li:last-of-type{
+    right: 244px;
+}
+main .main_con .right .pag li:nth-of-type(3):hover{
+    background: #08c;
+}
+main .main_con .right .pag li:nth-of-type(3):hover a{
+    color: #fff;
+}
+@media screen and (max-width:1239px){
+    main .main_con .right .pag li:last-of-type{
+        right: 21%;
+    } 
+}

@@ -1,0 +1,29 @@
+main .right h1{
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.45;
+    text-align: center;
+    color: #374567;
+}
+main .right .content h4{
+    font-size: 18px;
+    color: #374567;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+@media screen and (max-width:991px){
+    main .right h1{
+        font-size: 24px;
+        margin: 20px 0;
+    }
+    main .right{
+        padding: 20px 0;
+    }
+}
+@media screen and (max-width:767px){
+    main .main-head{
+        display: none;
+    }
+}

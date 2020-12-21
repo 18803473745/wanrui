@@ -1,0 +1,50 @@
+main .main_con .right ul li .item-con{
+    width: 100%;
+}
+main .main_con .right ul li .item-con .text{
+    height: auto;
+    margin-bottom: 15px;
+}
+main .main_con .right .pag li:nth-of-type(2){
+    display:inline-block;
+    background: #0088cc;
+}
+main .main_con .right .pag li:nth-of-type(2) a{
+    color: #fff;
+}
+main .main_con .right .pag li:nth-of-type(3){
+    background: #f4f4f5;
+}
+main .main_con .right .pag li:nth-of-type(3) a{
+    color: #7a8ba6;
+}
+main .main_con .right .pag li:nth-of-type(3):hover{
+    background: #00229e;
+}
+main .main_con .right .pag li:nth-of-type(3):hover a{
+    color: #fff;
+}
+main .main_con .right .pag li:last-of-type{
+    right: 288px;
+}
+@media screen and (max-width:767px){
+    main .main_con .right ul li .item-con .text{
+        display: block;
+        height: 64px;
+        line-height: 22px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:1240px){
+    main .main_con .right .pag{
+        margin-left: 0;
+    }
+    main .main_con .right .pag li:last-of-type{
+        display: none;
+    }
+}
+@media screen and (max-width:991px){
+    main .main_con .right {
+        padding: 20px 0;
+    }
+}

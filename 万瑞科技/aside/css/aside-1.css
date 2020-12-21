@@ -1,0 +1,18 @@
+.main-con h1{
+    font-size: 26px;
+}
+main .main_con .main-con .content1 p{
+    font-size: 15px;
+    color: #374567;
+    line-height: 1.8;
+    text-indent: 2em;
+    margin: 0 0 20px 0;
+}
+main .main_con .main-con .content1 .entry-footer p{
+    text-indent: 0;
+}
+@media screen and (max-width:767px){
+    main .main_con .main-con .content1 p{
+        text-align: justify;
+    }
+}

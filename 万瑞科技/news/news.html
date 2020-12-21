@@ -1,0 +1,694 @@
+<link rel="shortcut icon" href="../img/LOGOn-132x60.png">
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+    <meta content='telephone=no,email=no' name='format-detection'  />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="UTF-8">
+    <!--[if lt IE 9]>
+<script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
+<script src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js'></script>
+<script src='http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js'></script>
+<![endif]-->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <title>新闻动态 | 万瑞（北京）科技有限公司</title>
+    <script src="../js/jquery.js"></script>
+    <link rel="stylesheet" href="../css/lanren.css">
+    <link rel="stylesheet" href="../font_6660kdsh3sx/iconfont.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <script src="../font_6660kdsh3sx/iconfont.js"></script>
+    <link rel="stylesheet" href="../introduction/css/introduction.css">
+    <link rel="stylesheet" href="css/news.css">
+</head>
+
+<body>
+    <!-- 头部开始 -->
+    <header id="head">
+        <div class="header" id="header">
+            <header class="clear">
+                <div class="logo fl">
+                    <h1>
+                        <a href="../index.html"><img src="../img/wellray_logo_name.png" alt=""></a>
+                    </h1>
+                </div>
+                <nav class="fl clear">
+                    <ul class="clear fl">
+                        <li class="fl"><a href="../index.html">首页</a></li>
+                        <li class="fl">
+                            <a href="../introduction/introduction.html">公司介绍</a>
+                            <ul class="sub_nav">
+                                <li><a href="../introduction/about.html">关于我们</a></li>
+                                <li><a href="../introduction/certificate.html">资质证书</a></li>
+                            </ul>
+                        </li>
+                        <li class="fl">
+                            <a href="news.html">新闻动态</a>
+                            <ul class="sub_nav">
+                                <li><a href="company.html">公司新闻</a></li>
+                                <li><a href="industry.html">行业动态</a></li>
+                                <li><a href="media.html">媒体报道</a></li>
+                            </ul>
+                        </li>
+                        <li class="fl">
+                            <a href="../product/product.html">产品与服务</a>
+                            <ul class="sub_nav">
+                                <li>
+                                    <a href="../product/cable.html">电缆测井</a>
+                                    <ul class="li_nav">
+                                        <li><a href="../product/cable/cable-pro.html">增强型网络化综合采集系统（GeoExpress Pro）</a></li>
+                                        <li><a href="../product/cable/cable-2.html">高分辨率快速测井平台</a></li>
+                                        <li><a href="../product/cable/cable-3.html">高温小井眼系列</a></li>
+                                        <li><a href="../product/cable/cable-4.html">过钻头快速测井系统(TBEL)</a></li>
+                                        <li><a href="../product/cable/cable-5.html">小直径过套管电阻率（TCRT）</a></li>
+                                        <li><a href="../product/cable/cable-6.html">电缆地层测试器系列</a></li>
+                                        <li><a href="../product/cable/cable-7.html">八扇区固井质量成像仪（HRSS）</a></li>
+                                        <li><a href="../product/cable/cable-8.html">生产测井</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../product/lwd.html">LWD/MWD</a></li>
+                                <li><a href="../product/data.html">测井资料评价</a></li>
+                                <li><a href="../product/driiling.html">连续油管钻井</a></li>
+                                <li>
+                                    <a href="../product/tool.html">井下特殊工具</a>
+                                    <ul class="li_nav">
+                                        <li><a href="../product/tool/tool-1.html">模块式液压爬行器（MFPT）</a></li>
+                                        <li><a href="../product/tool/tool-2.html">电动液压桥塞坐封工具（HBST）</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../product/fluild.html">泥浆工程服务</a></li>
+                                <li><a href="../product/pipeline.html">管道检测服务</a></li>
+                                <li><a href="../product/earth.html">地球物理勘探</a></li>
+                            </ul>
+                        </li>
+                        <li class="fl"><a href="../join/join.html">招聘信息</a></li>
+                        <li class="fl"><a href="../contact/contact.html">联系我们</a></li>
+                    </ul>
+                    <div class="fl">
+                        <form action="" class="clear" id="form">
+                            <input type="text" name="" placeholder="输入关键词搜索" class="fl" id="txt">
+                            <input type="submit" value="" class="fl" id="sou">
+                        </form>
+                    </div>
+                    <script>
+                        var txt = document.getElementById("txt");
+                        var sou = document.getElementById("sou");
+                        sou.onclick = function () {
+                            txt.style.display = "block";
+                        }
+                    </script>
+                    <script>
+                        function hide() {
+                            $(".sub_nav").css("display", "none");   /*隐藏函数，就是将二级菜单隐藏*/
+                        }
+                        /*以下是第二部分*/
+                        $("nav ul li").mouseenter(
+                            function () {
+                                $(this).find(".sub_nav").slideDown();
+                            }
+                        );
+                        $("nav ul li").mouseleave(
+                            function () {
+                                // $(".sub_nav").slideUp();   /*鼠标离开后又隐藏*/
+                                $(this).find(".sub_nav").slideUp();
+                            }
+                        );
+                    </script>
+                    <script>
+                        function hide() {
+                            $(".li_nav").css("display", "none");   /*隐藏函数，就是将二级菜单隐藏*/
+                        }
+                        /*以下是第二部分*/
+                        $(".sub_nav li").mouseenter(
+                            function () {
+                                $(this).find(".li_nav").slideDown();
+                            }
+                        );
+                        $(".sub_nav li").mouseleave(
+                            function () {
+                                // $(".sub_nav").slideUp();   /*鼠标离开后又隐藏*/
+                                $(this).find(".li_nav").slideUp();
+                            }
+                        );
+                    </script>
+                </nav>
+                <div class="btn">
+                    <span class="btn-slide-bar"></span>
+                </div>
+            </header>
+        </div>
+    </header>
+
+
+    <!-- 代码部分begin -->
+
+    <section class="slide-bar">
+        <nav class="nav">
+            <ul class="nav1">
+                <li><a href="../index.html">首页</a></li>
+                <li>
+                    <a href="../introduction/introduction.html">公司介绍</a>
+                    <div class="icon"><span>></span></div>
+                    <ul class="sub_nav1">
+                        <li><a href="../introduction/about.html">关于我们</a></li>
+                        <li><a href="../introduction/certificate.html">资质证书</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="news.html">新闻动态</a>
+                    <div class="icon"><span>></span></div>
+                    <ul class="sub_nav1">
+                        <li><a href="company.html">公司新闻</a></li>
+                        <li><a href="industry.html">行业动态</a></li>
+                        <li><a href="media.html">媒体报道</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../product/product.html">产品与服务</a>
+                    <div class="icon"><span>></span></div>
+                    <ul class="sub_nav1">
+                        <li>
+                            <a href="../product/cable.html">电缆测井</a>
+                            <div class="icon"><span>></span></div>
+                            <ul class="li_nav1">
+                                <li><a href="../product/cable/cable-pro.html">增强型网络化综合采集系统（GeoExpress Pro）</a></li>
+                                <li><a href="../product/cable/cable-2.html">高分辨率快速测井平台</a></li>
+                                <li><a href="../product/cable/cable-3.html">高温小井眼系列</a></li>
+                                <li><a href="../product/cable/cable-4.html">过钻头快速测井系统(TBEL)</a></li>
+                                <li><a href="../product/cable/cable-5.html">小直径过套管电阻率（TCRT）</a></li>
+                                <li><a href="../product/cable/cable-6.html">电缆地层测试器系列</a></li>
+                                <li><a href="../product/cable/cable-7.html">八扇区固井质量成像仪（HRSS）</a></li>
+                                <li><a href="../product/cable/cable-8.html">生产测井</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../product/lwd.html">LWD/MWD</a></li>
+                        <li><a href="../product/data.html">测井资料评价</a></li>
+                        <li><a href="../product/driiling.html">连续油管钻井</a></li>
+                        <li>
+                            <a href="../product/tool.html">井下特殊工具</a>
+                            <div class="icon"><span>></span></div>
+                            <ul class="li_nav1">
+                                <li><a href="../product/tool/tool-1.html">模块式液压爬行器（MFPT）</a></li>
+                                <li><a href="../product/tool/tool-2.html">电动液压桥塞坐封工具（HBST）</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../product/fluild.html">泥浆工程服务</a></li>
+                        <li><a href="../product/pipeline.html">管道检测服务</a></li>
+                        <li><a href="../product/earth.html">地球物理勘探</a></li>
+                    </ul>
+                </li>
+                <li><a href="../join/join.html">招聘信息</a></li>
+                <li><a href="../contact/contact.html">联系我们</a></li>
+            </ul>
+            <div class="search">
+                <form action="" class="clear">
+                    <input type="text" placeholder="输入关键词搜索..." class="fl">
+                    <input type="submit" value="" class="fl">
+                </form>
+            </div>
+        </nav>
+        <div class="btn1">
+            <img src="../img/close.png" alt="">
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            (function () {
+                var _btn = document.querySelector(".btn-slide-bar"),
+                    _body = document.querySelector("body");
+                _btn.onclick = function () {
+                    $("body").css({
+                        transform: "translate3d(80%,0,0)",position:"fixed",left:0,top:0,bottom:0,right:0,
+                    });
+                }
+            })(window)
+        }, false);
+        $(".btn1").click(function () {
+            $("body").css({
+                transform:"translate3d(0,0,0)",position:"static",
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(".nav1>li .icon").toggle(function () {
+                //    $("nav").css("display","block")
+                //    $("nav").show();
+                //find
+                $(this).next(".sub_nav1").slideDown();
+                $(this).css("transform", "rotate(180deg)");
+            }, function () {
+                //    $("nav").hide();
+                $(this).next(".sub_nav1").slideUp();
+                $(this).css("transform", "rotate(0deg)");
+            })
+        })
+        $(function () {
+            $(".sub_nav1>li .icon").toggle(function () {
+                //    $("nav").css("display","block")
+                //    $("nav").show();
+                $(this).next(".li_nav1").slideDown();
+                $(this).css("transform", "rotate(180deg)");
+            }, function () {
+                //    $("nav").hide();
+                $(this).next(".li_nav1").slideUp();
+                $(this).css("transform", "rotate(0deg)");
+            })
+        })
+    </script>
+    <!-- 代码部分end -->
+    <!-- 头部结束 -->
+    <!-- 移动端底部开始 -->
+
+    <div class="footer-bar none">
+        <ul>
+            <li><a href="#"><i class="iconfont icon-shouji"></i><span>电话</span></a></li>
+            <li><a href="#"><i class="iconfont icon-youxiang"></i><span>邮箱</span></a></li>
+            <li><a href="#"><i class="iconfont icon-qq"></i><span>QQ</span></a></li>
+            <li><a href="#"><i class="iconfont icon-map"></i><span>地图</span></a></li>
+        </ul>
+    </div>
+
+    <!-- 移动端底部结束 -->
+
+    <!-- 侧边分享开始 -->
+    <div class="aside">
+        <div class="item1">
+            <i class="fx">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-fenxiang"></use>
+                </svg>
+            </i>
+            <div class="icon-left">
+                <h4>分享到：</h4>
+                <div class="link clear">
+                    <a href="#" class="fl">
+                        <i>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-xinlangweibo"></use>
+                            </svg>
+                        </i>
+                        新浪微博
+                    </a>
+                    <a href="#" class="fl">
+                        <i>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-weixin"></use>
+                            </svg>
+                        </i>
+                        微信
+                        <div class="img">
+                            <div class="imgt">
+                                <img src="../img/weixin.jpg" alt="">
+                            </div>
+                            <span>微信扫码分享</span>
+                        </div>
+                    </a>
+                    <a href="#" class="fl">
+                        <i>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-QQ"></use>
+                            </svg>
+                        </i>
+                        QQ好友
+                    </a>
+                    <a href="#" class="fl">
+                        <i>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-qqkongjian"></use>
+                            </svg>
+                        </i>
+                        QQ空间
+                    </a>
+                    <a href="#" class="fl">
+                        <i>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-douban"></use>
+                            </svg>
+                        </i>
+                        豆瓣
+                    </a>
+                    <a href="#" class="fl">
+                        <i>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-in"></use>
+                            </svg>
+                        </i>
+                        LinkedIn
+                    </a>
+                    <a href="#" class="fl">
+                        <i>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-Facebook"></use>
+                            </svg>
+                        </i>
+                        Facebook
+                    </a>
+                    <a href="#" class="fl">
+                        <i>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-twitter"></use>
+                            </svg>
+                        </i>
+                        Twitter
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="item2">
+            <i class="iconfont icon-duanjiantou-copy">
+            </i>
+        </div>
+    </div>
+    <!-- 侧边分享结束 -->
+
+    <script>
+        var W = $(window).width();
+        if (W >= 1024) {
+            $(document).ready(function () {
+                $(window).on('scroll', function () {
+
+                    var t = $(window).scrollTop();
+                    if (t != 0) {
+                        $("#head").css("height", "60px");
+                        $("#header").css("height", "60px");
+                        $("#header .logo").css("height", "60px");
+                        $("#header nav>ul>li").css("line-height", "57px");
+                        $("#header nav form").css("margin-top", "18px");
+                    } else {
+                        $("#head").css("height", "80px");
+                        $("#header").css("height", "80px");
+                        $("#header .logo").css("height", "80px");
+                        $("#header nav>ul>li").css("line-height", "77px");
+                        $("#header nav form").css("margin-top", "26px");
+                    }
+                })
+            });
+        } else {
+            $(document).ready(function () {
+                $(window).on('scroll', function () {
+                    $("#head").css("height", "60px");
+                    $("#header").css("height", "60px");
+                    $("#header .logo").css("height", "60px");
+                    $("#header nav>ul>li").css("line-height", "57px");
+                    $("#header nav form").css("margin-top", "18px");
+                })
+            });
+        }
+
+        $(document).ready(function () {
+            $(window).on('scroll', function () {
+                var t = $(window).scrollTop();
+                if (t < 50) {
+                    $(".item2").css("opacity", "0");
+                } else if (t > 50) {
+                    $(".item2").css("opacity", "1");
+                }
+            })
+        });
+        $(".item2").click(function () {
+            $('html,body').animate({ 'scrollTop': '0' }, 500,)
+        })
+
+    </script>
+
+    <!-- banner开始 -->
+    <div class="ban" >
+        <img src="../img/banner.jpg" alt="">
+    </div>
+    <!-- banner结束 -->
+
+    <!-- 主体内容开始 -->
+    <main class="clear">
+        <p class="main-head">
+            <a href="../index.html">首页</a>&nbsp;/&nbsp;<a href="news.html">新闻动态</a>
+        </p>
+        <div class="main_con clear">
+            <aside class="slid fl">
+                <div class="aside-menu">
+                    <ul>
+                        <li><a href="company.html">公司新闻</a></li>
+                        <li><a href="media.html">媒体报道</a></li>
+                        <li><a href="industry.html">行业动态</a></li>
+                    </ul>
+                </div>
+                <div class="aside-con">
+                    <h3>最新产品</h3>
+                    <ul class="clear">
+                        <li class="fl">
+                            <h4><a href="../aside/aside-1.html">National first cable type hydraulic bridge plug technology into the social market</a></h4>
+                        </li>
+                        <li class="fl">
+                            <a href="../aside/aside-2.html"><img src="img/img1.jpg" alt=""></a>
+                            <h4><a href="../aside/aside-2.html">Module Flexible Powerful Tractor（MFPT）</a></h4>
+                        </li>
+                        <li class="fl">
+                            <a href="../aside/aside-3.html"><img src="img/img2.jpg" alt=""></a>
+                            <h4><a href="../aside/aside-3.html">万瑞科技将参展北京石油展，服务8个国家，20多个油气田，产品质量精益求精！</a></h4>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="right fr">
+                <ul>
+                    <li class="clear">
+                        <div class="img fl">
+                            <a href="#"><img src="img/con1.png" alt=""></a>
+                        </div>
+                        <div class="item-con fr">
+                            <h2>
+                                <a href="#">万瑞科技研发生产的电动液压坐封工具顺利完成长庆油田桥射联作施工</a>
+                            </h2>
+                            <div class="text">
+                                <p>近期，我公司研发生产的电动液压坐封工具在长庆油田地平1xx-1x井多级压裂施工中，顺利完成12级桥射联作作业，一次成功率100%。</p>
+                            </div>
+                            <div class="item-meta">
+                                <a href="company.html">公司新闻</a><span>2020年10月12日</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clear">
+                        <div class="img fl">
+                            <a href="#"><img src="img/con2.png" alt=""></a>
+                        </div>
+                        <div class="item-con fr">
+                            <h2>
+                                <a href="#">全球最大油服商退出北美页岩业务</a>
+                            </h2>
+                            <div class="text">
+                                <p>原创 国际能源参考 国际能源参考 3天前 日前，全球最大油服企业斯伦贝谢与美国Liberty油服公司达成协议，将其北美页岩压裂业务全部出售给后者，自此彻底退出北美页岩领域。 “艰难过冬” 路透社援引多位知情人士的话称，斯伦贝谢以其北美压裂业务换取Liberty油服公司37%的股权，交易总价值为4.48亿美元，预计将于今年年底前完成。       斯伦贝谢在页岩领域深耕长达半个世纪之久，此次出售北美页岩业务很快引发业内热议。       …</p>
+                            </div>
+                            <div class="item-meta">
+                                <a href="industry.html">行业动态</a><span>2020年9月24日</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clear">
+                        <div class="img fl">
+                            <a href="#"><img src="img/con3.png" alt=""></a>
+                        </div>
+                        <div class="item-con fr">
+                            <h2>
+                                <a href="#">大庆分公司桥射联作吹响冲锋号</a>
+                            </h2>
+                            <div class="text">
+                                <p>3月29日，肇平22-平4井桥塞坐封成功、射孔点火成功，拉开了大庆分公司桥射联作施工的序幕，践行了“桥射联作保压裂”。截至4月1日测井第三项目部C4036射孔队已完成12段36簇的射孔任务，实现单日单井完成4段作业，平均每段作业时间2.4小时，桥塞坐封成功率100%，射孔发射率100%。 为了保证2020年桥射联作施工开好头起好步，分公司高度重视，落实“一井一策”的方针，多次组织召开设计评审会、施工保障推进会、协调会，主动与相关方协调交底，逐一细化落实井筒前期作业情况、施工现场布局、资源配置和关…</p>
+                            </div>
+                            <div class="item-meta">
+                                <a href="industry.html">行业动态</a><span>2020年4月12日</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clear">
+                        <div class="img fl">
+                            <a href="#"><img src="img/con4.jpg" alt=""></a>
+                        </div>
+                        <div class="item-con fr">
+                            <h2>
+                                <a href="#">中国上游勘探投资将超3100亿元，9200亿美元的全球油服市场加速回暖</a>
+                            </h2>
+                            <div class="text">
+                                <p>原创： 大雨 石油圈 石油圈 微信号 oilsns 功能介绍 跟踪全球油气行业商业动态及科技信息，聚合精英群体、搭建商业合作、推动科技创新。 今天油服业爆发式增长。 作者 | 大雨 我国石油上游勘探开发投资加大，资本向石油上游“聚拢”已成爆发式增长趋势。 10月23日，据中石油报道，我国国内上游勘探开发投资相比前两年大幅回升，超出市场年初预期。 中石油官网一组数据显示，上半年我国国内三大石油公司上游资本开支同比增长22%，有专家预计全年增长将在20%左右，总额超过3100亿元，而2016年这一数…</p>
+                            </div>
+                            <div class="item-meta">
+                                <a href="industry.html">行业动态</a><span>2018年10月25日</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clear">
+                        <div class="img fl">
+                            <a href="#"><img src="img/con5.jpg" alt=""></a>
+                        </div>
+                        <div class="item-con fr">
+                            <h2>
+                                <a href="#">我公司电缆液压桥塞坐封工具圆满完成地质调查局鄂阳页2井桥塞施工作业</a>
+                            </h2>
+                            <div class="text">
+                            </div>
+                            <div class="item-meta">
+                                <a href="company.html">公司新闻</a><span>2018年10月25日</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clear">
+                        <div class="img fl">
+                            <a href="#"><img src="img/con6.jpg" alt=""></a>
+                        </div>
+                        <div class="item-con fr">
+                            <h2>
+                                <a href="#">海底节点–地震勘探技术新装备 </a>
+                            </h2>
+                            <div class="text">
+                                <p>目前，海底地震数据采集主要有海底电缆（OBC）采集和海底节点（OBN）采集两种。海底节点地震系统比之前者，具有较高的灵活性，系统布防、回收更加方便的特性，能够获得全方位保真数据，提高地震成像质量，提高4D勘探的可重复性，改善油藏监测结果。 海底节点地震观测方法就是将地震仪通过水下机器人直接布放在海底，地震仪自备电池供电，震源船单独承担震源激发任务。当震源船完成所有震源点激发后，水下机器人回收海底地震仪，下载数据并进行处理与解释。 海底节点地震数据采集已进行了大量应用，尤其在油藏监测领域应用效果显…</p>
+                            </div>
+                            <div class="item-meta">
+                                <a href="industry.html">行业动态</a><span>2018年10月25日</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clear">
+                        <div class="img fl">
+                            <a href="#"><img src="img/con7.jpg" alt=""></a>
+                        </div>
+                        <div class="item-con fr">
+                            <h2>
+                                <a href="#">低碳清洁能源将成未来发展重点方向 </a>
+                            </h2>
+                            <div class="text">
+                                <p>中国石油新闻中心 发表日期： 2018-10-24 07:43 　　中国石油网消息 （记者陈青）10月19日，壳牌首次举办“共创未来”中国论坛。来自能源行业的企业代表、专家、创业者及高校师生齐聚西安，共商能源清洁化转型的未来蓝图和实现路径。 最新全球能源展望报告显示，到2040年，全球能源需求将比2017年增长30%。面对来自能源安全、环境保护、气候变化、减少排放等方面的挑战，业界专家认为，低碳清洁能源将是未来发展的重点方向。全社会应携手努力，加大材料科学、工程学、数字科技等众多行业，以及政策、…</p>
+                            </div>
+                            <div class="item-meta">
+                                <a href="industry.html">行业动态</a><span>2018年10月24日</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clear">
+                        <div class="img fl">
+                            <a href="#"><img src="img/con8.jpeg" alt=""></a>
+                        </div>
+                        <div class="item-con fr">
+                            <h2>
+                                <a href="#"> 中石化战胜嘉能可！斥57亿元成功挺进非洲，石油人又有大活干了  </a>
+                            </h2>
+                            <div class="text">
+                                <p>经过了一番波折之后，中石化终于在非洲实现了历史性跃进。而接下来，中石化也有大活忙了。 2018年3月8日，南非竞争法庭发布公告，批准了中石化高达9亿美元（约合57亿元人民币）的收购案。在经历了同竞争对手的一番角逐之后，中石化这一历史性迈进实现了落地。 这笔收购不仅成为中石化迄今在非洲的最大单笔投资，也标志着中石化的国际化扩张再下一城，在重要的非洲市场站稳了脚跟。为其国际化壮大进一步打下了基础。 大项目敲定，你有活干了 2017年3月，中石化宣布同雪佛龙达成协议，将以9亿美元价格收购雪佛龙在南非的…</p>
+                            </div>
+                            <div class="item-meta">
+                                <a href="industry.html">行业动态</a><span>2018年3月26日</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clear">
+                        <div class="img fl">
+                            <a href="#"><img src="img/con9.png" alt=""></a>
+                        </div>
+                        <div class="item-con fr">
+                            <h2>
+                                <a href="#"> 我国海外油气权益产量逐年上升  </a>
+                            </h2>
+                            <div class="text">
+                                <p>记者在《中国油气产业发展分析与展望报告蓝皮书(2017-2018)》新闻发布会上获悉：我国油企“走出去”成绩斐然，海外油气权益产量逐年上升。据《蓝皮书》数据显示，截至2017年底，我国34家能源企业(其中民营企业23家)参与海外210个油气项目投资；境外石油权益产量连续24年保持快速增长，石油权益突破1.5亿吨，油气权益产量达到1.9亿吨油当量。其中，94%的石油权益产量来自于我国三大国有石油公司，预计海外石油权益产量在2018年将达到1.58亿吨。该《蓝皮书》由中国石油企业协会、中国油气产业发…</p>
+                            </div>
+                            <div class="item-meta">
+                                <a href="industry.html">行业动态</a><span>2018年3月26日</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clear">
+                        <div class="img fl">
+                            <a href="#"><img src="img/con10.jpeg" alt=""></a>
+                        </div>
+                        <div class="item-con fr">
+                            <h2>
+                                <a href="#"> 重磅！中国原油期货正式上线（附原油期货极简教程，石油人必读 ) </a>
+                            </h2>
+                            <div class="text">
+                                <p>中国原油期货正式挂牌交易</p>
+                            </div>
+                            <div class="item-meta">
+                                <a href="industry.html">行业动态</a><span>2018年3月26日</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="pag">
+                    <li><span>1/3</span></li>
+                    <li><span><</span></li>
+                    <li><a href="news.html">1</a></li>
+                    <li><a href="pag2.html">2</a></li>
+                    <li><a href="pag3.html">3</a></li>
+                    <li><a href="pag2.html">></a></li>
+                    <li>
+                        <form action="" class="clear">
+                            <input type="text" name="" id="" placeholder="页码" class="fl">
+                         <button type="submit" class="fl">
+                             <i>→</i>
+                         </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <!-- 主体内容结束 -->
+
+
+    <!-- 底部开始 -->
+    <footer>
+        <div class="footer_con">
+            <div class="ft">
+                <dl>
+                    <dt>技术支持</dt>
+                    <dd><a href="#">Home</a></dd>
+                    <dd><a href="#">FAQs</a></dd>
+                    <dd><a href="#">Join us</a></dd>
+                    <dd><a href="#">Contact Us</a></dd>
+                </dl>
+                <dl>
+                    <dt>联系我们</dt>
+                    <dd><a href="#">Home</a></dd>
+                    <dd><a href="#">招聘信息</a></dd>
+                    <dd><a href="#">FAQs</a></dd>
+                    <dd><a href="#">Join us</a></dd>
+                    <dd><a href="#">Contact Us</a></dd>
+                </dl>
+                <dl>
+                    <dt>友情链接</dt>
+                    <dd><a href="#">Home</a></dd>
+                    <dd><a href="#">长江大学</a></dd>
+                    <dd><a href="#">石油大学（北京）</a></dd>
+                    <dd><a href="#">石油大学（华东）</a></dd>
+                    <dd><a href="#">FAQs</a></dd>
+                    <dd><a href="#">Join us</a></dd>
+                    <dd><a href="#">Contact Us</a></dd>
+                </dl>
+                <div class="img">
+                    <h4>微信公众号</h4>
+                    <img src="../img/weixin.jpg" alt="">
+                </div>
+                <div class="tel">
+                    <h3>服务热线</h3>
+                    <p>010-58563500</p>
+                    <p>客服服务时段： 周一至周五，9:00 - 17:30，节假日休息</p>
+                    <p>
+                        <a href="#"><i class="iconfont icon-weibo"></i></a>
+                        <a href="#"><i class="iconfont icon-facebook"></i></a>
+                        <a href="#"><i class="iconfont icon-twitter"></i></a>
+                        <a href="#"><i class="iconfont icon-23"></i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2018 万瑞（北京）科技有限公司 版权所有 <a href="#">京ICP备18010914号</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- 底部结束 -->
+
+
+</body>
+
+</html>

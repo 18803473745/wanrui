@@ -1,0 +1,13 @@
+main .main_con .main-con .content1 .text p{
+    font-size: 16px;
+    color: #374567;
+    line-height: 1.8;
+    text-indent: 2em;
+    margin-bottom: 20px;
+}
+main .main_con .main-con .content1 .text p a,main .main_con .main-con .content1 .text p a img{
+    display: block;
+}
+main .main_con .main-con .content1 .text p a img{
+    max-width: 100%;
+}

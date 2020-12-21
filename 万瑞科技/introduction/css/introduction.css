@@ -1,0 +1,138 @@
+/* ***************banner开始********************************* */
+.ban img{
+    display: block;
+    width: 100%;
+}
+@media screen and (max-width:768px){
+    .ban{
+        display: none;
+    }
+}
+/* ***************banner结束********************************* */
+/* ***************主体内容开始********************************* */
+main{
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+main .main-head{
+    color: #7a8ba6;
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 1.4;
+}
+main .main-head a{
+    color: #7a8ba6;
+}
+main .main-head a:hover{
+    color:#00229e;
+}
+main .main-con{
+    padding: 30px 0;
+}
+main .main-con ul li{
+    padding: 0 0 20px;
+    margin-bottom: 20px;
+    border-bottom:1px solid #ebebeb;
+}
+main .main-con h2{
+    margin: 0 0 12px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+main .main-con h2 a{
+    color: #374567;
+}
+main .main-con h2 a:hover{
+    color: #00229e;
+}
+main .main-con ul li p{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #374567;
+}
+main .main-con ul li .lk,main .main-con ul li .lk a{
+    font-size: 14px;
+    color: #97a5ba;
+    line-height: 1.4;
+}
+main .main-con ul li div a:hover{
+    color: #00229e;
+}
+main .main-con ul li div span{
+    margin-left: 20px;
+}
+main .main-con ul li .img{
+    width: 245px;
+    overflow: hidden;
+}
+main .main-con ul li .img img{
+    transition: .5s;
+}
+main .main-con ul li .img a,main .main-con ul li .img img{
+    display: block;
+    width: 100%;
+}
+main .main-con ul li .img img:hover{
+    transform: scale(1.01);
+}
+main .main-con ul li .text{
+    margin-left: 20px;
+}
+main .main-con ul li:nth-of-type(2) .text h2{
+    margin-bottom: 90px;
+}
+@media screen and (min-width:1240px){
+    main{
+        width: 1200px;
+    }
+    main .main-con{
+        width: 830px;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1239px){
+    main{
+        width: 970px;
+    }
+    main .main-con{
+        width: 660px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    main{
+        width: 750px;
+    }
+    main .main-con{
+        padding: 20px 0;
+        width: 100%;
+    }
+    main .main-head {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:767px){
+    main .main-con ul li .img{
+        width: 120px;
+    }
+    main .main-con ul li:nth-of-type(2) .text h2{
+        margin-bottom: 12px;
+    }
+    main .main-head {
+        margin-top: 20px;
+    }
+    footer{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    main .main-head{
+        display: none;
+    }
+}
+/* ***************主体内容结束********************************* */
+

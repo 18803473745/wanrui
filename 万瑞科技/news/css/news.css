@@ -1,0 +1,301 @@
+/* ***************侧边栏开始************************** */
+.slid .aside-menu{
+    padding: 30px 0;
+    width: 300px;
+}
+.slid .aside-menu ul{
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 3px;
+    background: rgba(228, 232, 238, .1);
+    border: 1px solid #efefef;
+}
+.slid .aside-menu ul li{
+    border-top: 1px solid #efefef;
+}
+.slid .aside-menu ul li:first-of-type{
+    border-top: none;
+}
+.slid .aside-menu ul li a{
+    display: block;
+    padding: 15px 0 15px 20px;
+    font-size: 14px;
+    color: #375467;
+    line-height: 20px;
+    font-weight: 400;
+    position: relative;
+}
+.slid .aside-menu ul li a::before{
+    display: block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url(../img/bgimg.svg) no-repeat;
+    background-size:16px auto ;
+    opacity: .8;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+}
+.slid .aside-menu ul li a:hover{
+    background: #00229e;
+    color: #fff;
+}
+.aside-con{
+    width: 300px;
+    margin-bottom: 30px;
+}
+.aside-con h3{
+    padding:0 0 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #375467;
+}
+.aside-con ul{
+    width: 100%;
+}
+.aside-con ul li{
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.aside-con ul li h4{
+    padding-top: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.aside-con ul li h4 a{
+    color: #375467;
+}
+.aside-con ul li h4 a:hover{
+    color: #22009e;
+}
+.aside-con ul li img,.aside-con ul li a{
+    display: block;
+}
+.aside-con ul li img{
+    width: 100%;
+    height: auto;
+    transition: .2s;
+}
+.aside-con ul li>a{
+    overflow: hidden;
+    border-radius: 4px;
+}
+.aside-con ul li:hover img{
+    transform: scale(1.03);
+}
+@media screen and (max-width:1239px){
+    .slid .aside-menu{
+        width: 250px;
+    }
+    .aside-con{
+        width: 250px;
+    }
+}
+@media screen and (max-width:992px){
+    .slid{
+        display: none;
+    }
+}
+@media screen and (max-width:767px){
+   main .main-head{
+        display: block;
+    }
+}
+/* ***************侧边栏结束************************** */
+/* ***************右侧内容开始************************** */
+main .main_con .right{
+    width: 830px;
+    padding: 30px 0;
+}
+main .main_con .right ul:first-of-type li{
+    padding: 0 0 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ebebeb;
+}
+main .main_con .right ul li .img{
+    width: 245px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+main .main_con .right ul li .img img{
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all .3s;
+}
+main .main_con .right ul li .img img:hover{
+    transform: scale(1.03);
+}
+main .main_con .right ul li .item-con{
+    width: 565px;
+}
+main .main_con .right ul li .item-con h2{
+    margin: 0 0 12px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.46;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+main .main_con .right ul li .item-con a{
+    color: #374567;
+}
+main .main_con .right ul li .item-con a:hover{
+    color: #00229e !important;
+}
+main .main_con .right ul li .item-con .text{
+    height: 72px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+main .main_con .right ul li .item-con .item-meta,main .main_con .right ul li .item-con .item-meta a{
+    color: #97a5ba;
+    font-size: 14px;
+}
+main .main_con .right ul li .item-con .item-meta span{
+    margin-left: 20px;
+}
+main .main_con .right .pag{
+    text-align: center;
+    margin-left: -80px;
+    position: relative;
+}
+main .main_con .right .pag li{
+    display: inline-block;
+    font-size: 13px;
+    line-height: 28px;
+    cursor: pointer;
+    margin: 0 5px;
+    text-align: center;
+    border-radius: 2px;
+    min-width: 30px;
+    box-sizing: border-box;
+    background: #f4f4f5;
+    color: #7a8ba6;
+}
+main .main_con .right .pag li span{
+    display: block;
+    padding: 0 8px;
+}
+main .main_con .right .pag li a{
+    color: #7a8ba6;
+    display: block;
+}
+main .main_con .right .pag li:hover {
+    background: #00229e;
+    color: #fff;
+}
+main .main_con .right .pag li:first-of-type:hover{
+    background: #f4f4f5;
+    color: #7a8ba6;
+    cursor: text;
+}
+main .main_con .right .pag li:hover a{
+    color: #fff;
+}
+main .main_con .right .pag li input[type="text"]{
+    width: 66px;
+    border: 1px solid #dcdfe6;
+    line-height: 26px;
+    padding: 0 28px 0 8px;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+main .main_con .right .pag li:last-of-type {
+    background: none;
+    position: absolute;
+    bottom: 0;
+    right: 267px;
+}
+main .main_con .right .pag li form{
+    position: relative;
+}
+main .main_con .right .pag li button[type="submit"]{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    right: 0;
+    top: 0;
+    border: none;
+    outline: none;
+    background: none;
+}
+main .main_con .right .pag li:nth-of-type(2){
+   display: none;
+}
+main .main_con .right .pag li:nth-of-type(3) a{
+    color: #fff;
+}
+main .main_con .right .pag li:nth-of-type(3){
+    background: #08c;
+}
+@media screen and (min-width:992px) and (max-width:1239px){
+    main .main_con .right{
+        width: 660px;
+    }
+    main .main_con .right ul li .item-con {
+        width: 395px;
+    }
+    main .main_con .right .pag li:last-of-type {
+        right: 182px;
+    }
+}
+@media screen and (max-width:992px){
+    main .main_con .right{
+        width: 100%;
+    }
+    main .main_con .right ul li .item-con {
+        width: calc(100% - 265px);
+    }
+    main .main_con .right .pag li:last-of-type{
+        right: 210px;
+    }
+}
+@media screen and (max-width:767px){
+    main .main_con .right ul li .item-con .text{
+        display: none;
+    }
+    main .main_con .right ul li .img{
+        width: 120px;
+    }
+    main .main_con .right ul li .item-con {
+        width: calc(100% - 130px);
+    }
+    footer{
+        position: static;
+    }
+    main .main_con .right .pag li:last-of-type{
+       display: none;
+    }
+    main .main_con .right ul li .item-con h2{
+        font-size: 18px;
+        line-height: 1.34;
+    }
+    main .main_con .right .pag{
+        margin-left: 0;
+    }
+    main .main_con .right ul:first-of-type li{
+        padding: 10px 0;
+    }
+}
+/* ***************右侧内容结束************************** */

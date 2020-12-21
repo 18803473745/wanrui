@@ -1,0 +1,61 @@
+.main-con .meta span:first-of-type{
+    margin-left: -15px;
+}
+main .main-con .content1 ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 87px;
+}
+main .main-con .content1 ul li{
+    width: 32%;
+    position: relative;
+    border: none;
+    padding: 0;
+    margin: 0 0 10px;
+    cursor: pointer;
+}
+main .main-con .content1 ul li img{
+    display: block;
+    width: 100%;
+}
+main .main-con .content1 ul li:nth-of-type(4),main .main-con .content1 ul li:nth-of-type(5){
+    width: 50%;
+}
+main .main-con .content1 ul li h2{
+    width: 100%;
+    padding: 40px 10px 9px;
+    text-align: center;
+    font-size: 13px;
+    background: linear-gradient(0deg,rgba(0,0,0,.7),rgba(0,0,0,.3) 70%,transparent);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    box-sizing: border-box;
+    line-height: 1;
+    margin-bottom: 0;
+}
+main .main-con .content1 .tag{
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+main .main-con .content1 .tag i{
+    font-size: 14px;
+    color: #0088cc;
+    margin-right: 5px;
+    opacity: .4;
+}
+@media screen and (max-width:600px){
+    main .main-con .content1 ul li{
+        width: 48%;
+    }
+    main .main-con .content1 ul li:nth-of-type(4) img{
+        height: 100%;
+        object-fit: cover;
+    }
+    main .main-con .content1 ul li:nth-of-type(5){
+        width: 100%;
+    }
+}

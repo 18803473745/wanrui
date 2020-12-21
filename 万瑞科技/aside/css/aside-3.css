@@ -1,0 +1,25 @@
+main .main_con .main-con .content1>p a,main .main_con .main-con .content1>p a img{
+    display: block;
+    width: 100%;
+}
+main .main_con .main-con .content1 p{
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0 0 20px;
+}
+main .main_con .main-con .content1 p strong{
+    font-weight: bold;
+}
+main .main_con .main-con .content2{
+    margin: 0;
+}
+@media screen and (max-width:991px){
+    .main-con h1{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:767px){
+    .main-con h1{
+        font-size: 20px;
+    }
+}

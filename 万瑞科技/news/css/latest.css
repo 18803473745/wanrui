@@ -1,0 +1,8 @@
+main .main_con .right ul li:nth-of-type(5) .item-con,main .main_con .right ul li:nth-of-type(6) .item-con{
+    width: 100%;
+}
+@media screen and (max-width:768px){
+    main .main_con .right ul li:nth-of-type(5) .item-con .text,main .main_con .right ul li:nth-of-type(6) .item-con .text{
+        display: block;
+    }
+}

@@ -1,0 +1,625 @@
+/* ****************头部开始***************************** */
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1111;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    transition: all .3s;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,.1);
+}
+.header header{
+    margin: 0 auto;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+header .logo{
+    height: 80px;
+    position: relative;
+}
+header nav{
+    margin-left: 100px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+header h1{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+header h1 img,header h1 a{
+    display: block;
+}
+header h1{
+    line-height: 80px;
+}
+header h1 img{
+    max-height: 60px;
+    width: auto;
+}
+header nav>ul{
+    position: relative;
+}
+header ul li a{
+    color: #333;
+    display: block;
+}
+header nav>ul>li{
+    line-height: 77px;
+    border-top: 3px solid transparent;
+    margin-left: 30px;
+    transition: all .3s;
+    position: relative;
+}
+header nav>ul>li:first-of-type{
+    margin-left: 0;
+}
+header nav>ul>li:hover{
+    border-top-color:#206be7;
+}
+header nav>ul>li:hover>a,header nav>ul>li:first-of-type a{
+    color: #206be7;
+}
+header nav form{
+    position: relative;
+    width: 28x;
+    height: 28px;
+    margin-top: 26px;
+    margin-left: 70px;
+}
+header nav form input[type="text"]{
+    border: 1px solid #ddd;
+    width: 210px;
+    height: 28px;
+    padding: 3px 6px;
+    font-size: 12px;
+    color: #333;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+     transition: all 5s;
+}
+header nav form:hover input[type="text"]{
+    display: block;
+}
+header nav form input[type="submit"]{
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    background: url(../img/tj_42.png) no-repeat center center #eee;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+header nav>ul>li .sub_nav{
+    width: 160px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 15px;
+    background: rgba(255, 255, 255, .98);
+    display: none;
+    z-index: 111;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+header nav>ul>li .sub_nav li{
+    line-height: 1.42857;
+}
+header nav>ul>li .sub_nav a{
+    padding: 10px 20px;
+}
+header nav>ul>li .sub_nav li:hover>a{
+    color: #fff;
+    background: #206be7;
+}
+header nav>ul>li .sub_nav>li{
+    position: relative;
+}
+header nav>ul>li .sub_nav .li_nav{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 360px;
+    font-size: 14.9px;
+    display: none;
+    background: #fff;
+    z-index: 111;
+}
+.btn{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+.btn img{
+    display: block;
+    height: 14px;
+}
+.nav{
+    background: #08c;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+.btn1{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.btn1 img{
+    height: 22px;
+}
+.nav .nav1{
+    border-top: 1px solid rgba(0, 0, 0, .05);
+}
+.nav .nav1 li a{
+    padding: 0 20px;
+    display: block;
+    line-height: 48px;
+    color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+.nav .nav1 .sub_nav1{
+    display: none;
+}
+.nav .nav1 .sub_nav1 .li_nav1{
+    display: none;
+}
+.nav .nav1 li{
+    position: relative;
+}
+.nav .nav1  .icon{
+    width: 50px;
+    height: 48px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+.nav .nav1  .icon span{
+    display: block;
+    font-family: "黑体";
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 48px;
+    transform: rotate(90deg);
+    position: relative;
+}
+.nav .nav1  .icon span::after{
+    content: '';
+    width: 34px;
+    height: 1px;
+    background: rgba(0, 0, 0, .07);
+    position: absolute;
+    top: 48px;
+    right: 7px;
+}
+.nav .nav1 li a:hover,.nav .nav1>li:first-of-type>a{
+    background: rgba(255, 255, 255, .1);
+}
+.nav .search{
+    padding: 26px 15px;
+}
+.nav .search form{
+    position: relative;
+}
+.nav .search form input{
+    height: 28px;
+    line-height: 28px;
+}
+.nav .search form input[type="text"]{
+    width: 100%;
+    font-size: 12px;
+    color: #333;
+    padding: 3px 6px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+.nav .search form input[type="submit"]{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 34px;
+    height: 28px;
+    background: url(../img/tj_42.png) no-repeat center center,#08c;
+    cursor: pointer;
+}
+.nav .search form input[type="submit"]:hover{
+    background: url(../img/tj_42.png) no-repeat center center,#00229e;
+}
+.footer-bar{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+}
+.footer-bar ul{
+    display: flex;
+}
+.footer-bar ul li{
+    width: 25%;
+    text-align: center;
+    height: 50px;
+    font-size: 16px;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+.footer-bar ul li a{
+    color: #666;
+}
+.footer-bar ul li a:hover{
+    color: #333;
+}
+.footer-bar ul li i{
+    display: block;
+    font-size: 24px;
+    line-height: 26px;
+}
+.footer-bar ul li span{
+    font-size: 12px;
+}
+@media screen and (min-width:1240px){
+    .header header{
+        width: 1200px;
+    }
+}
+@media screen and (max-width:1239px) and (min-width:992px){
+    .header header{
+        width: 970px;
+    }
+    header nav>ul>li{
+        margin-left: 30px;
+    }
+}
+@media screen and  (max-width:1024px){
+    header{
+        height: 60px;
+    }
+    header nav{
+        display: none;
+    }
+    .header .logo img {
+        max-height: 60px
+    }
+    header .logo{
+        height: 60px;
+    }
+    .btn{
+        display: block;
+    }
+}
+@media screen and  (min-width:1024px){
+    header{
+        height: 80px;
+    }
+}
+@media screen and (max-width:991px) and (min-width:768px){
+    .header header{
+        width: 750px;
+    }
+}
+@media screen and (max-width:767px){
+    header{
+        height: 50px;
+    }
+    .header .logo{
+        height: 50px;
+    }
+    .header .logo img{
+        height: 40px
+    }
+    .footer-bar{
+        display: block;
+        z-index: 11111;
+    }
+}
+/* ****************头部结束***************************** */
+/***********************底部开始******************************** */
+footer{
+    background: #0a1633;
+    padding: 70px 0 0;
+}
+footer .footer_con{
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+footer .footer_con .ft{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+footer .footer_con dl{
+    margin-bottom: 14px;
+}
+footer .footer_con dl dt,footer .footer_con h4,footer .footer_con h3{
+    font-size: 18px;
+    margin: 0 0 15px;
+    font-weight: 600;
+    line-height: 30px;
+    color: rgba(255, 255, 255, .9);
+}
+footer .footer_con dl  dd{
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+footer .footer_con dl  dd a{
+    display: block;
+    color: rgba(255, 255, 255, .6);
+}
+footer .footer_con dl  dd a:hover{
+    color: #ccc;
+}
+footer .footer_con .img{
+    margin-right: 62px;
+}
+footer .footer_con .img img{
+    width: 165px;
+    height: auto;
+}
+footer .footer_con .tel{
+    margin-right: 154px;
+    width: 20%;
+}
+footer .footer_con .tel p:first-of-type{
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    line-height: 1;
+    color: #ddd;
+}
+footer .footer_con .tel p:nth-of-type(2){
+    font-size: 14px;
+    color: rgba(255, 255, 255, .6);
+}
+footer .footer_con .tel p:last-of-type{
+    margin-top: 15px;
+}
+footer .footer_con .tel p:last-of-type a i{
+    font-size: 22px;
+    color: rgba(255, 255, 255, .6);
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+footer .footer_con .tel p:last-of-type a:hover i{
+    color: #ccc;
+}
+footer .footer_con .copyright{
+    margin-top: 70px;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid rgba(239, 239, 239, .3);
+    font-size: 12px;
+    color: rgba(255, 255, 255, .6);
+}
+footer .footer_con .copyright a{
+    color: rgba(255, 255, 255, .6);
+}
+footer .footer_con .copyright a:hover{
+    color: #ccc;
+}
+@media screen and (min-width:1240px){
+    footer .footer_con{
+        width: 1200px;
+    }
+    footer .footer_con .tel{
+        margin-right: 65px;
+    }
+    footer .footer_con .img{
+        margin-right: 13px;
+    }
+}
+@media screen and (max-width:1239px) and (min-width:992px){
+    footer .footer_con{
+        width: 970px;
+    }
+    footer .footer_con .tel {
+        margin-right: 40px;
+        width: 21%;
+    }
+    footer .footer_con .img img{
+        width: 126px;
+        height: auto;
+    }
+    footer .footer_con .img{
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width:991px) and (min-width:768px){
+    footer .footer_con{
+        width: 750px;
+    }
+    footer .footer_con dl{
+        width: 33.33333%;
+    }
+    footer .footer_con .img{
+        margin-right: 15px;
+    }
+    footer .footer_con .img img{
+        width: 210px;
+    }
+    footer .footer_con .tel {
+        margin-right: 0;
+        width: 67%;
+    }
+}
+@media screen and (max-width:767px){
+    footer .footer_con .ft{
+        display: none;
+    }
+    footer{
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    footer .footer_con .copyright{
+        margin: 0;
+    }
+}
+/***********************底部结束******************************** */
+
+/******************************** 侧边分享开始 **************************/
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+  }
+.aside{
+    position: fixed;
+    width: 40px;
+    right: 20px;
+    bottom: 20%;
+    z-index: 111;
+}
+.aside .item1{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #999;
+    background: #eee;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+.aside .item1:hover{
+    background: #00229e;
+    color: #fff;
+}
+.aside .item1 .fx {
+    display: block;
+    font-size: 40px;
+    line-height: 40px;
+}
+.aside .item1 .icon-left{
+    width: 250px;
+    background: #fff;
+    position: absolute;
+    right: 100%;
+    top: 100%;
+    transform: translate(0,-50%);
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, .1);
+    display: none;
+}
+.aside .item1:hover .icon-left{
+    display: block;
+}
+.aside .item1 .icon-left h4{
+    font-size: 16px;
+    padding: 10px 15px;
+    line-height: 1;
+    font-weight: 500;
+    color: #fff;
+    background: #206be7;
+    border-radius: 2px;
+    margin-bottom: 1em;
+}
+.aside .item1 .icon-left .link a{
+    width: 49.9%;
+    padding: 8px 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+    box-sizing: border-box;
+}
+.aside .item1 .icon-left .link a i{
+    display:inline-block;
+    font-size: 16px;
+    margin-right: 3px;
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+}
+.aside .item1 .icon-left .link a:hover{
+    background: rgba(0, 0, 0, .05);
+    color: #00229e;
+}
+.aside .item1 .icon-left .link a:nth-of-type(2){
+    position: relative;
+}
+.aside .item1 .icon-left .link a .img{
+    position: absolute;
+    left: -25%;
+    bottom: 45px;
+    z-index: 10;
+    background: #fff;
+    border: 1px solid #efefef;
+    display: none;
+}
+.aside .item1 .icon-left .link a .img img{
+    width: 160px;
+}
+.aside .item1 .icon-left .link a .img span{
+    font-size: 12px;
+    color: #999;
+    line-height: 1;
+    padding-bottom: 10px;
+    text-align: center;
+    display: block;
+}
+.aside .item1 .icon-left .link a .img::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-top-color: #efefef;
+    position: absolute;
+    left: 50%;
+    bottom: -16px;
+    transform: translate(-50%,0);
+}
+.aside .item1 .icon-left .link a:nth-of-type(2):hover .img{
+    display: block;
+}
+.aside .item2{
+    width: 40px;
+    height: 40px;
+    border-top: 1px solid rgba(0, 0, 0, .05);
+    background: #eee;
+    line-height: 40px;
+    color: #999;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.aside .item2 i{
+    display: block;
+    font-size: 25px;
+    line-height: 40px;
+    color: #999;
+    text-align: center;
+}
+.aside .item2:hover{
+    background: #206be7;
+}
+.aside .item2:hover i{
+    color: #fff;
+}
+@media screen and (max-width:768px){
+    .aside{
+        display: none;
+    }
+}
+/******************************** 侧边分享结束 **************************/
